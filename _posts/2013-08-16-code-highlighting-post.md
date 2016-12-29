@@ -5,7 +5,6 @@ description: "Demo post displaying the various ways of highlighting code in Mark
 category: articles
 tags: [sample post, code, highlighting]
 image:
-  feature: so-simple-sample-image-5.jpg
   credit: Michael Rose
   creditlink: http://mademistakes.com
 comments: true  
