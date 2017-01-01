@@ -27,7 +27,7 @@ Pero no programar formularios web, apis rest o aplicaciones convencionales.  Me 
 
 Respecto a ver Peliculas, Series o animes es casi un placer sexual ver algo relacionado a ciencia ficción. No se si es algo esquizofrenico pero ver este tipo de videos hace que mi imaginación se expanda, me abandone o cree realidades al intentar analizar si lo que se esta proyectando es ficción, ya existe o puede ser implementado. También me gusta ver series policiacas o de espías. Estoy seguro que mi fascinación por este tipo de series se debe a que en el mundo real no soy aventurero, no tomo riesgos innecesarios ni nada parecido. Pero en el mundo virtual podría hacer todo lo que el actor principal de estas series realiza.
 
-Finalmente para no aburrir, mi intención al crear esta pagina es compartir lo que voy aprendiendo, lo que voy viendo, lo que voy sintiendo y sobre todo mis ideas relacionadas a proyectos ficticios que quizas pueda servir de partida a alguna persona con mas recursos que yo y nada me haria mas feliz , que se implementen algun día.
+Finalmente para no aburrir, mi intención al crear esta pagina es compartir lo que voy aprendiendo, lo que voy viendo, lo que voy sintiendo y sobre todo mis ideas relacionadas a proyectos ficticios, etc.
 
 <a markdown="0" href="{{ site.url }}" class="btn">Check out my blog</a> 
 <a markdown="0" href="https://www.youtube.com/user/ZERL1NG" class="btn">Check out my youtube channel</a> 
