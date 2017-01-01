@@ -3215,4 +3215,5 @@ pre .coffeescript .javascript,pre .javascript .xml,pre .tex .formula,pre .xml .c
     display: block;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
