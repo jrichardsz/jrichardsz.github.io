@@ -3207,3 +3207,12 @@ pre .apache .sqbracket,pre .comment,pre .deletion,pre .doctype,pre .java .annota
 pre .coffeescript .javascript,pre .javascript .xml,pre .tex .formula,pre .xml .cdata,pre .xml .css,pre .xml .javascript,pre .xml .vbscript {
     opacity: .5;
 }
+
+/*custom*/
+
+.img-responsive
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
