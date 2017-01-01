@@ -2,30 +2,34 @@
 layout: page
 permalink: /about/index.html
 title: About
-description: Electrical Engineer, Mathematician, Entrepreneur
-headline: Hossain Mohammad Faysal
-tags: [Hossain, Mohd, Faysal]
-modified: 2013-11-04
+description: System Bachelor, Amateur  Mathematician, AI Lover
+headline: Richard Osmar Leon Ingaruca
+tags: [Richard Osmar Leon Ingaruca,Leon Ingaruca,Richard Osmar]
+modified: 2016-12-31
 image:
-  feature: Hossain-Mohd-Faysal.jpg
+  feature: agente.png
   credit: 
-  location: The Pearl Qatar
-  creditlink: http://en.wikipedia.org/wiki/The_Pearl-Qatar
+  location: Lima/Peru  
 ---
 
->"I find hope in the darkest of days, and focus in the brightest. I do not judge the universe."
--Dalai Lama
+>"In this world, a single blade can take you anywhere you want to go. And even though it’s a virtual world, I feel more alive in here than I ever did in the real world."
+-Sword Art Online
 
-My name is **Hossain Mohd. Faysal**, and this is my personal blog.  
+Mi nombre es Richard Osmar Leon Ingaruca y esta es mi página personal. 
 
-I am an MSc + PhD candidate in *Electrical Engineering* at the [School of Engineering and Applied Science](http://www.seas.upenn.edu/) at **University of Pennsylvania**. I am licensed as a Professional Engineer (P.E) to practice in the states of Texas, Massachusetts and California. I graduated with a B.Sc degree in EECS from Texas A&M University in 2011 and with a B.Sc degree in Mathematics from Massachusetts Institute of Technology in 2012, and currently focusing on Electrical Engineering for my post-graduate studies.
+Soy un bachiller egresado de la carrera de Ingeniería Informática de la Universidad Nacional Federico Villarreal de Lima/Perú. Actualmente vengo desempeñando el cargo de arquitecto de software en el área de sistemas de una prestigiosa universidad privada en mi país.
 
-At some point in the not-terribly-distant future, I hope to found a self-sustaining collective of clever people, for fun, profit(?), and the promotion of human life in the universe. This might wind up in Qatar, Bangladesh, Scandinavia, the Massachusetts Bay Area, the SF Bay Area, Japan, Germany, or the dustbin of overly idealistic plans. (Yes, I have a special bin for overly idealistic plans. In my district they can't be recycled with residential mixed paper.) The most challenging aspect of this concept is to curtail unproductive competition with other people who will inevitably have the same idea. (Some sort of cooperative federation...) I'm presently looking for people who might be interested in being a part of such an organization.
+En los años que duro la universidad comprendi algo que estaba por default en mi configuración desde niño : "La necesidad de entender el porque de todas las cosas especialmente fenómenos físicos del planeta". Los mejores cursos que recuerdo fueron matemática IV y todas las Fisicas que lleve. Entender que una ecuación diferencial puede explicar un fenómeno físico fue lo máximo. Lástima que por no ser físico no profundize en el tema.
 
-Anyways, for now I'm just working toward changing the face of Electrical Engineering forever. Not that I necessarily expect to succeed, but it's something to strive for, and it's a fun problem to work on.  
+En esta etapa tambien aprendí a programar. Es como si hubiera estado destinado a ser programador. De hecho hasta el momento en el que escribo estos parrafos es lo único para lo que sirvo (software), y es por eso que no puedo darme el lujo de ser un programador mas, sino al menos en mi entorno local, uno bueno y es por ello que paso mucha parte de mi vida, frente al computador.
 
-I operate my own social network. You can register on it at http://social.hmfaysal.tk. Its free and its the easiest way to get in touch with me :)  
+Si me preguntan que es lo que me gusta, pues dire , aunque suene aburrido para muchos : "Programar y ver Peliculas, Series o animes". 
 
-This website was built with Jekyll and personifies my view that *human perspectives should be allowed to be shared without any barriers and restrictions.*. Click on the Technical Details button below to know more about that.  
+Pero no programar formularios web, apis rest o aplicaciones convencionales.  Me gusta programar cosas que en según mi concepción son novedosas y que segun google aun no existen. Puedo pasar horas de horas de mi tiempo libre, creando una pequeña aplicación que automatiza algo para mi trabajo, algun plugin, algo que vi en una película, algo de IA, etc. Eso es lo que me gusta hacer en mi tiempo libre y al coincidir con mi profesión pues soy muy feliz.
 
-<a markdown="0" href="{{ site.url }}/technical-details" class="btn">Technical Details</a> <a markdown="0" href="{{ site.url }}" class="btn">Check out my blog</a> <a markdown="0" href="http://social.hmfaysal.tk/" class="btn">Join my Social Network</a>
+Respecto a ver Peliculas, Series o animes es casi un placer sexual ver algo relacionado a ciencia ficción. No se si es algo esquizofrenico pero ver este tipo de videos hace que mi imaginación se expanda, me abandone o cree realidades al intentar analizar si lo que se esta proyectando es ficción, ya existe o puede ser implementado. También me gusta ver series policiacas o de espías. Estoy seguro que mi fascinación por este tipo de series se debe a que en el mundo real no soy aventurero, no tomo riesgos innecesarios ni nada parecido. Pero en el mundo virtual podría hacer todo lo que el actor principal de estas series realiza.
+
+Finalmente para no aburrir, mi intención al crear esta pagina es compartir lo que voy aprendiendo, lo que voy viendo, lo que voy sintiendo y sobre todo mis ideas relacionadas a proyectos ficticios que quizas pueda servir de partida a alguna persona con mas recursos que yo y nada me haria mas feliz , que se implementen algun día.
+
+<a markdown="0" href="{{ site.url }}" class="btn">Check out my blog</a> 
+<a markdown="0" href="https://www.youtube.com/user/ZERL1NG" class="btn">Check out my youtube channel</a> 

@@ -9,7 +9,7 @@ url:        https://jrichardsz.github.io
 
 # Owner/author information
 owner:
-  name:				Richard Leon Ingaruca
+  name:				Richard Osmar Leon Ingaruca
   avatar:			bio-photo.jpg
   email:			you@email.com
   signoff_text:		Hasta la próxima vez
@@ -17,15 +17,16 @@ owner:
   signature_image:	signature.png
   # Social networking links used in footer. Update and remove as you like.
   # To register at HMFAYSAL SOCIAL, visit http://social.hmfaysal.tk
-  twitter:        hmfaysal
+  twitter:        JRichardsz
   facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
+  github:         jrichardsz
+  stackexchange:  http://stackoverflow.com/users/3957754/jrichardsz
+  linkedin:       richard-osmar-leon-ingaruca-65569b94
   instagram:      
   flickr:         
   tumblr:         
-  hmfaysalsocial: hmfaysal
+  hmfaysalsocial: 
+  youtube: https://www.youtube.com/user/ZERL1NG
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    
 
