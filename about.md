@@ -8,7 +8,7 @@ tags: [Richard Osmar Leon Ingaruca,Leon Ingaruca,Richard Osmar]
 modified: 2016-12-31 
 ---
 
-![me]({{ site.url }}/images/agente.png){: .center-image }
+![me]({{ site.url }}/images/agente.png){: .img-responsive }
 
 >"In this world, a single blade can take you anywhere you want to go. And even though it’s a virtual world, I feel more alive in here than I ever did in the real world."
 -Sword Art Online
