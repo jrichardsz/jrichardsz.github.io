@@ -46,6 +46,5 @@ robots y tendriamos muchos robots con la capcidad de apreder , caminando entre l
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/HU4mwlTUXnc" frameborder="0" allowfullscreen></iframe>
 
-Esperando no haber sido muy abstracto
-
+Esperando no haber sido muy abstracto.
 System.exit(0);
