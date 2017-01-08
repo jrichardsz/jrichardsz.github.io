@@ -16,7 +16,7 @@ Antes de que el software "aprenda a programar", necesitamos que sepa como "apren
 
 ![tachikoma](https://ghostlightning.files.wordpress.com/2010/06/ozcghostintheshellstandalonecomplexe15machinesdesirantes-mkv_snapshot_09-04_2010-06-22_17-56-26.jpg){: .img-responsive }
 
-La imagen anterior es un robot, llamado tachikoma el cual tiene un IA avanzada que poco a poco se va enriqueciendo a tal punto que no se sabe si el robot alcanzo a desarrollar un espíritu... [https://es.wikipedia.org/wiki/Ghost_in_the_Shell:_Stand_Alone_Complex](https://es.wikipedia.org/wiki/Ghost_in_the_Shell:_Stand_Alone_Complex)
+La imagen anterior es un entrañable robot, llamado tachikoma el cual tiene un IA avanzada que poco a poco se va enriqueciendo a tal punto que no se sabe si el robot alcanzo a desarrollar un espíritu... [https://es.wikipedia.org/wiki/Ghost_in_the_Shell:_Stand_Alone_Complex](https://es.wikipedia.org/wiki/Ghost_in_the_Shell:_Stand_Alone_Complex)
 
 Crear un programa que aprenda de la misma forma que aprende un humano es complejo. Grandes empresas trabajan en este asunto y tienen
 avances interesantes, pero nada parecido a la forma de aprender de un niño recien nacido. Si esto ya estaría desarrollado, peliculas de ciencia ficción como Yo Robot, Skynet de Terminator, Chappie, etc serían realidad.
