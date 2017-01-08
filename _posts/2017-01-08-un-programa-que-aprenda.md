@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ¿Como crear un programa que aprenda a programar?  Parte 1
-description: "Un programa que aprenda a programar, es algo muy complejo."
+title: ¿Cómo crear un programa que aprenda por si solo?
+description: "Un programa que aprenda de forma autónoma, es algo muy complejo."
 category: inteligencia-artificial
 tags: [inteligencia artificial, ia, ai, series, ficcion]
 comments: true  
@@ -10,17 +10,13 @@ comments: true
 Hace como 2 semanas una persona que vio algun código de reconocimiento de voz en mi cuenta de github, me contacto y su pregunta fue directa
 "¿Como hago para que mi programa aprenda a programar?" Casi me caigo de mi silla. Estoy acostumbrado a preguntas sobre java, html, linux, etc pero nada de IA.
 
-Analizemos la idea general : **Un programa que programe**
-
-Para ello necesitariamos :
-
-* Que el programa entienda lo que es "aprender"
-* Definir el lenguaje que usara
-* No necesito que programe de forma visual, asi que basta con que genere un archivo de código fuente en el lenguaje especificado.
+Antes de que el software "aprenda a programar", necesitamos que sepa como "aprender"!!
 
 # Que el programa entienda lo que es "aprender"
 
 ![tachikoma](https://ghostlightning.files.wordpress.com/2010/06/ozcghostintheshellstandalonecomplexe15machinesdesirantes-mkv_snapshot_09-04_2010-06-22_17-56-26.jpg){: .img-responsive }
+
+La imagen anterior es un robot, llamado tachikoma el cual tiene un IA avanzada que poco a poco se va enriqueciendo a tal punto que no se sabe si el robot alcanzo a desarrollar un espíritu... [https://es.wikipedia.org/wiki/Ghost_in_the_Shell:_Stand_Alone_Complex](https://es.wikipedia.org/wiki/Ghost_in_the_Shell:_Stand_Alone_Complex)
 
 Crear un programa que aprenda de la misma forma que aprende un humano es complejo. Grandes empresas trabajan en este asunto y tienen
 avances interesantes, pero nada parecido a la forma de aprender de un niño recien nacido. Si esto ya estaría desarrollado, peliculas de ciencia ficción como Yo Robot, Skynet de Terminator, Chappie, etc serían realidad.
@@ -50,9 +46,5 @@ robots y tendriamos muchos robots con la capcidad de apreder , caminando entre l
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/HU4mwlTUXnc" frameborder="0" allowfullscreen></iframe>
 
-En un siguiente post analizaremos los otros 2 puntos:
-
-* Definir el lenguaje que usara
-* No necesito que programe de forma visual, asi que basta con que genere un archivo de código fuente en el lenguaje especificado.
-
-Esperando no haber sido muy abstracto, System.exit(0);
+Esperando no haber sido muy abstracto
+System.exit(0);
