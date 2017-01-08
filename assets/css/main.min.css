@@ -18,7 +18,7 @@ body {
     position: relative;
     margin-bottom: 3em;
     height: 15em;
-    background: rgba(0,0,0,.05);
+    /*background: rgba(0,0,0,.05);*/
 }
 
 .component>h2 {
