@@ -42,9 +42,11 @@ Les recomiendo esta película. Ahi muestra claramente lo que sería desarrollar 
 El ser humano nace con un conjunto de característiscas o habilidades las cuales le permitirán aprender o sobrevivir en este mundo. Estas
 caracteristicas mínimas vitales podrían ser en un robot , el reconocimiento de objetos, la capacidad de imitar sonidos, comportamientos, etc. Se esperaria que con 
 estas características el robot pueda ir interpretando su entorno e ir aprendiendo, claro esta con el software necesario. Luego todo lo que aprenda un robot se puede replicar a mas 
-robots y tendriamos muchos robots con la capcidad de apreder , caminando entre los seres humanos como en esta serie:
+robots y tendriamos muchos robots que nacerian con conocimiento heredado. Si a eso le sumamos la capacidad de apreder , los tendriamos caminando entre nosotros como en esta serie:
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/HU4mwlTUXnc" frameborder="0" allowfullscreen></iframe>
+
+Llegado a ese punto, podríamos decir que el hombre es capaz de crear vida :) ?
 
 Esperando no haber sido muy abstracto.
 <br>
