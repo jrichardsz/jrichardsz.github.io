@@ -15,12 +15,13 @@ Encontré frameworks de 3D orientados a juegos pero todos requerían descargar m
 
 # Sería genial un framework cuyo código sea algo como
 
-```java
+{% highlight java %}
 Espacio3D esp = new Espacio3D();
 Human human = new Human(HumanTemplates.default);
 esp.add(human, location, zoom, option1,...);
 AndroidContainer.add(human);
-```
+{% endhighlight %}
+
 
 Así como la clase HumanTemplates, habría un GeometricTemplates para figuras geométricas y muchas mas por defecto siguiendo una clasificación
 como la que se propone en este documento de **Accelerate Learning**:
@@ -49,7 +50,7 @@ Solo se necesitó 3 clases java : Cube.java, OpenGLRenderer.java y OpenGLDemoAct
 
 La clase Cube no era nada del otro mundo. Basicamente se definen los vertices y demas temas geometricos relacionados a un cubo:
 
-```java
+{% highlight java %}
 public class Cube
 
     private float vertices[] = 
@@ -57,25 +58,24 @@ public class Cube
             1.0f, -1.0f, -1.0f,
             1.0f,  1.0f, -1.0f,
 .....
-```
+{% endhighlight %}
 
 La clase OpenGLRenderer, instancia a la clase Cube y le asigna algo de movimiento:
 
-```java
+{% highlight java %}
 public class OpenGLRenderer implements Renderer {
-
     private Cube mCube = new Cube();
     private float mCubeRotation;
 ...
-```
+{% endhighlight %}
 
 Finalmente la clase main de android, el Activity. Esta clase usa el OpenGLRenderer
 
-```java
+{% highlight java %}
 GLSurfaceView view = new GLSurfaceView(this);
-        view.setRenderer(new OpenGLRenderer());
-        setContentView(view);
-```
+view.setRenderer(new OpenGLRenderer());
+setContentView(view);
+{% endhighlight %}
 
 El proyecto android completo lo pueden encontra aquí **TODO**
 
