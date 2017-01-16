@@ -60,6 +60,8 @@ highlight_js:	false
 markdown:    kramdown
 paginate:    4
 paginate_path: "page:num"
+syntax_highlighter: rouge
+highlighter: rouge
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
@@ -70,7 +72,6 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
-  syntax_highlighter: rouge
 
   coderay:
     coderay_line_numbers: 
