@@ -50,7 +50,7 @@ Solo se necesitó 3 clases java : Cube.java, OpenGLRenderer.java y OpenGLDemoAct
 
 La clase Cube no era nada del otro mundo. Basicamente se definen los vertices y demas temas geometricos relacionados a un cubo:
 
-```java
+{% highlight java %}
 public class Cube
 
     private float vertices[] = 
@@ -58,7 +58,7 @@ public class Cube
             1.0f, -1.0f, -1.0f,
             1.0f,  1.0f, -1.0f,
 .....
-``` 
+{% endhighlight %}
 
 La clase OpenGLRenderer, instancia a la clase Cube y le asigna algo de movimiento:
 
