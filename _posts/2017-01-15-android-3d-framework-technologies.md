@@ -45,31 +45,15 @@ Solo se necesitó 3 clases java : Cube.java, OpenGLRenderer.java y OpenGLDemoAct
 
 La clase Cube no era nada del otro mundo. Basicamente se definen los vertices y demas temas geometricos relacionados a un cubo:
 
-{% highlight java %}
-public class Cube
-    private float vertices[] = 
-            -1.0f, -1.0f, -1.0f,
-            1.0f, -1.0f, -1.0f,
-            1.0f,  1.0f, -1.0f,
-...            
-{% endhighlight %}
+<script src="https://gist.github.com/jrichardsz/7b6635958bf6249d9a50e574c7d9d4d9.js"></script>
 
 La clase OpenGLRenderer, instancia a la clase Cube y le asigna algo de movimiento:
 
-{% highlight java %}
-public class OpenGLRenderer implements Renderer {
-    private Cube mCube = new Cube();
-    private float mCubeRotation;
-...
-{% endhighlight %}
+<script src="https://gist.github.com/jrichardsz/5338d8f59f19d42e49e72e29760c5a8a.js"></script>
 
 Finalmente la clase main de android, el Activity. Esta clase usa el OpenGLRenderer
 
-{% highlight java %}
-GLSurfaceView view = new GLSurfaceView(this);
-view.setRenderer(new OpenGLRenderer());
-setContentView(view);
-{% endhighlight %}
+<script src="https://gist.github.com/jrichardsz/74ba07b0f157fbf2c27442f9626707b2.js"></script>
 
 El proyecto android completo lo pueden encontra aquí **TODO**
 
