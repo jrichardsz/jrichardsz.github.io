@@ -58,6 +58,7 @@ future:      true
 pygments:    true
 highlight_js:	true
 markdown:    kramdown
+highlighter : rouge
 paginate:    4
 paginate_path: "page:num"
 
@@ -70,7 +71,6 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
-  syntax_highlighter: rouge
 
   coderay:
     coderay_line_numbers: 
