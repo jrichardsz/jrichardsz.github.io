@@ -55,9 +55,10 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
 future:      true
-pygments:    false
+pygments:    true
 highlight_js:	true
 markdown:    kramdown
+highlighter: rouge
 paginate:    4
 paginate_path: "page:num"
 
