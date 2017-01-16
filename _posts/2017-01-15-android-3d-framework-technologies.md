@@ -22,6 +22,13 @@ esp.add(human, location, zoom, option1,...);
 AndroidContainer.add(human);
 {% endhighlight %}
 
+```java
+Espacio3D esp = new Espacio3D();
+Human human = new Human(HumanTemplates.default);
+esp.add(human, location, zoom, option1,...);
+AndroidContainer.add(human);
+```
+
 
 Así como la clase HumanTemplates, habría un GeometricTemplates para figuras geométricas y muchas mas por defecto siguiendo una clasificación
 como la que se propone en este documento de **Accelerate Learning**:
