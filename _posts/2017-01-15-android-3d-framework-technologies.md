@@ -15,19 +15,7 @@ Encontré frameworks de 3D orientados a juegos pero todos requerían descargar m
 
 # Sería genial un framework cuyo código sea algo como
 
-{% highlight java %}
-Espacio3D esp = new Espacio3D();
-Human human = new Human(HumanTemplates.default);
-esp.add(human, location, zoom, option1,...);
-AndroidContainer.add(human);
-{% endhighlight %}
-
-```java
-Espacio3D esp = new Espacio3D();
-Human human = new Human(HumanTemplates.default);
-esp.add(human, location, zoom, option1,...);
-AndroidContainer.add(human);
-```
+<script src="https://gist.github.com/jrichardsz/b3166e9c2fe14e6aaaf3b158df517b34.js"></script>
 
 
 Así como la clase HumanTemplates, habría un GeometricTemplates para figuras geométricas y muchas mas por defecto siguiendo una clasificación
