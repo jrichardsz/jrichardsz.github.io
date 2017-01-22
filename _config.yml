@@ -39,7 +39,7 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: How It Works
+  - title: Made In
     url: /technical-details
   - title: Tags
     url: /tags
