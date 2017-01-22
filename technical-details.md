@@ -6,8 +6,8 @@ tags: [Technical, Details]
 modified: 2013-11-02
 image:
   feature: turin-machine.jpg
-  credit: http://www.weakforcepress.com/
-  creditlink: http://www.weakforcepress.com/
+  credit: http://gizmodo.com/5891399/how-to-build-turings-universal-machine
+  creditlink: http://gizmodo.com/5891399/how-to-build-turings-universal-machine
 ---
 
 This page is intended for the tech aficionados and contains specific technical details about the inner workings of this site. I hope to shed some light on some of the special features that this website contains and maybe even help those interested ones implementing similar features in their website. Without further adieu, lets just dive in:
