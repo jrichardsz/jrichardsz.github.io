@@ -19,9 +19,7 @@ This repo is awesome but it's examples has some points "strange" that I fixed :D
 
 ## min3d.sampleProject1:raw/camaro_obj
 
-```java
-IParser parser = Parser.createParser(Parser.Type.OBJ, getResources(), "min3d.sampleProject1:raw/camaro_obj", true);
-```
+<script src="https://gist.github.com/jrichardsz/56e832ecc5f46e196f71fd55ba09ffdb.js"></script>
 
 **min3d.sampleProject1:raw/camaro_obj** is the path of obj file. When I tried to run this examples I had this problem :
 
@@ -34,30 +32,11 @@ After some hours, and a little experience in android i could see that this strin
 
 So I created a util class to get this path:
 
-```java
-
-public static String getGlobalResourcePackageIdentifier(Context context) {
-    String packageName = context.getPackageName();
-    PackageManager pm = context.getPackageManager();
-    try {
-        ApplicationInfo ai = pm.getApplicationInfo(packageName, 0);
-        String apk = ai.dataDir;
-        return apk.substring(apk.lastIndexOf(File.separator)+1);
-    } catch (Throwable x) {
-        Log.i(ResourceUtils.class.getCanonicalName(),"Failed when try to get global package identifier");
-    }
-    return null;
-}
-
-
-```
+<script src="https://gist.github.com/jrichardsz/1c24501766ed02c6049ce2bc5696d5eb.js"></script>
 
 And worked perfectly :D
 
-```java
-IParser parser = Parser.createParser(Parser.Type.OBJ,
-		getResources(), ResourceUtils.getGlobalResourcePackageIdentifier(this.getBaseContext())+":raw/camaro_obj", true);
-```
+<script src="https://gist.github.com/jrichardsz/dc1c405f06d41d1583bba79c83ea24cc.js"></script>
 
 HTH.
 
