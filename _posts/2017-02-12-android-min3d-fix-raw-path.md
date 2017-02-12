@@ -13,7 +13,7 @@ Continuing with testing of 3d android frameworks, I founded this repo:
 
 After some hours, I could compile and run in my android device:
 
-[![ScreenShot](https://raw.githubusercontent.com/jrichardsz/videotutoriales/master/global-resources/images/WebMole_Youtube_Video_custom_001.png)](https://www.youtube.com/watch?v=NTeIn3dVi9c)
+[![videotutorial](https://raw.githubusercontent.com/jrichardsz/videotutoriales/master/global-resources/images/WebMole_Youtube_Video_custom_001.png)](https://www.youtube.com/watch?v=NTeIn3dVi9c){:target="_blank"}
 
 This repo is awesome but it's examples has some points "strange" that I fixed :D
 
