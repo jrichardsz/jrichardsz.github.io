@@ -38,6 +38,9 @@ And worked perfectly :D
 
 <script src="https://gist.github.com/jrichardsz/dc1c405f06d41d1583bba79c83ea24cc.js"></script>
 
+Android Studio project ready to use:
+[https://github.com/jrichardsz/android-3d-templates/tree/master/002-TestMin3D](https://github.com/jrichardsz/android-3d-templates/tree/master/002-TestMin3D)
+
 HTH.
 
 System.exit(0)
