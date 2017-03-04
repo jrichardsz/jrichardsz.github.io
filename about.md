@@ -19,7 +19,7 @@ Soy un bachiller egresado de la carrera de Ingeniería Informática de la Univer
 
 En los años que duro la universidad comprendi algo que estaba por default en mi configuración desde niño : "La necesidad de entender el porque de todas las cosas especialmente fenómenos físicos del planeta". Los mejores cursos que recuerdo fueron matemática IV y todas las Fisicas que lleve. Entender que una ecuación diferencial puede explicar un fenómeno físico fue lo máximo. Lástima que por no ser físico no profundize en el tema.
 
-En esta etapa tambien aprendí a programar. Es como si hubiera estado destinado a ser programador. De hecho hasta el momento en el que escribo estos parrafos es lo único para lo que sirvo (software), y es por eso que no puedo darme el lujo de ser un programador mas, sino al menos en mi entorno local, uno bueno y es por ello que paso mucha parte de mi vida, frente al computador.
+En esta etapa tambien aprendí a programar. Es como si hubiera estado destinado a ser programador. De hecho hasta el momento en el que escribo estos parrafos es lo único para lo que sirvo (software), y es por eso que no puedo darme el lujo de ser un informático mas, sino al menos en mi entorno local, uno bueno y es por ello que paso mucha parte de mi vida, frente al computador.
 
 Si me preguntan que es lo que me gusta, pues dire : "Programar, peliculas, series, animes, libros y compartir conocimiento". 
 
