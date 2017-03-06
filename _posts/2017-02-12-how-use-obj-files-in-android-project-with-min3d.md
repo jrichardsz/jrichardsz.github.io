@@ -42,30 +42,30 @@ In this example, zip file contains:
 
 - Open obj file and create or update a line whit **mtlib** reference.
 
-  - Example : 
+Example : 
   
-    This
-    ```
-      mtllib /dir/some_dir/face.mtl
-      o FaceGen
-      g eyeL_hi
-      s 1
-      v 28.1446 41.1304 43.5008
-      v 23.2692 38.3366 41.7695
-    ```
+This
+```
+  mtllib /dir/some_dir/face.mtl
+  o FaceGen
+  g eyeL_hi
+  s 1
+  v 28.1446 41.1304 43.5008
+  v 23.2692 38.3366 41.7695
+```
     
-    To
-    
-    ```
-      mtllib face.mtl
-      o FaceGen
-      g eyeL_hi
-      s 1
-      v 28.1446 41.1304 43.5008
-      v 23.2692 38.3366 41.7695
-    ```
+To
+
+```
+  mtllib face.mtl
+  o FaceGen
+  g eyeL_hi
+  s 1
+  v 28.1446 41.1304 43.5008
+  v 23.2692 38.3366 41.7695
+```
    
-    This line is strange line: **mtllib face.mtl**. face.mtl does not exists but works. If I change it to  **mtllib face_mtl.mtl** does not work.
+This line is strange line: **mtllib face.mtl**. face.mtl does not exists but works. If I change it to  **mtllib face_mtl.mtl** does not work.
     
 ## Verify or fix texture
 
