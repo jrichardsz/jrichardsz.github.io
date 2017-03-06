@@ -42,7 +42,7 @@ In this example, zip file contains:
 
 - Open obj file and create or update a line whit **mtlib** reference.
 
-Example : 
+  - Example : 
   
 This
 ```
