@@ -29,21 +29,31 @@ In this example, zip file contains:
 - face_sock.jpg
 
 
-## Change file names
+## UpperCase
 
-- Unzip and replace initial upper case letter if exists from .obj , .mtl and other resources due to android restriction :
-
+Due to this android restriction :
 ```
 Error:Execution failed for task ':app:mergeDebugResources'.
 > \..\..\Android3D-min3d-Face-Rotation\app\src\main\res\drawable\EyesWhite.jpg: Error: 'E' is not a valid file-based resource name character: File-based resource names must contain only lowercase a-z, 0-9, or underscore
 ```
+We need replace any upper case letter top lower case if exists from .obj , .mtl and other resources 
 
   - From **F**ace.obj to **f**ace.obj
 
-- Add obj or mtl prefixes for easy lookup. 
+## Android ignore extensions  
 
-  - from face.obj to face_**obj**.obj 
-  - from face.mtl to face_**mtl**.mtl
+This names are not allowed by android :
+- Face.obj
+- Face.mtl
+
+If you saw, both files are name **Face**. Android forces us to use a unique file name. So wee need to add obj, mtl or something as to make a unique file name.  I use _suffix like :
+
+- from face.obj to face_**obj**.obj 
+- from face.mtl to face_**mtl**.mtl
+
+## Update references
+
+Files names are changed (images, obja and mtl),  so you need to update its refereces where using them.
 
 ## Create or update mtlib reference in obj file
 
