@@ -31,12 +31,19 @@ In this example, zip file contains:
 
 ## Change file names
 
-- Unzip and replace initial upper case letter if exists from .obj and .mtl file. 
-  - Example : **F**ace.obj to **f**ace.obj
+- Unzip and replace initial upper case letter if exists from .obj , .mtl and other resources due to android restriction :
 
-- Delete extensions and add obj or mtl prefixes. 
+```
+Error:Execution failed for task ':app:mergeDebugResources'.
+> \..\..\Android3D-min3d-Face-Rotation\app\src\main\res\drawable\EyesWhite.jpg: Error: 'E' is not a valid file-based resource name character: File-based resource names must contain only lowercase a-z, 0-9, or underscore
+```
 
-  - Example : face.obj to face_obj.obj and face.mtl to face_mtl.mlt
+  - From **F**ace.obj to **f**ace.obj
+
+- Add obj or mtl prefixes for easy lookup. 
+
+  - from face.obj to face_**obj**.obj 
+  - from face.mtl to face_**mtl**.mtl
 
 ## Create or update mtlib reference in obj file
 
