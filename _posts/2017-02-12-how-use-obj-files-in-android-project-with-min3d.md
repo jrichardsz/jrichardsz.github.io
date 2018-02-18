@@ -53,15 +53,14 @@ If you saw, both files are name **Face**. Android forces us to use a unique file
 
 ## Update references
 
-Files names are changed (images, obja and mtl),  so you need to update its refereces where using them.
+Files names are changed (images, obj and mtl),  so We need to update its refereces where using them.
 
-## Create or update mtlib reference in obj file
+## Update .obj
 
-- Open obj file and create or update a line whit **mtlib** reference.
+Obj files need a reference to .mtl files. So if our mtl file name are changed, We need update this. In some cases , .obj files use a asbolute path , so this also could be changed.
 
-  - Example : 
-  
-This
+- Open obj file with some text editor and create or update a line whit **mtlib** reference.
+
 ```
   mtllib /dir/some_dir/face.mtl
   o FaceGen
@@ -82,7 +81,20 @@ To
   v 23.2692 38.3366 41.7695
 ```
    
-This line is strange line: **mtllib face.mtl**. face.mtl does not exists but works. If I change it to  **mtllib face_mtl.mtl** does not work.
+This is quite strange : 
+
+Real name of mtl is face_**mtl**.mtl , so reference might be
+**mtllib face_mtl.mtl** but this does not work.
+
+If I change it to  **mtllib face.mtl** works. 
+
+It is as if min3D  ignore _mtl of file name.
+
+Other example from my last work :
+real file name : **bigmax_white_mtl.mtl**
+reference in bigmax_white_obj.obj file : **mtllib bigmax_white.mtl**
+
+Maybe this is part of documentation but I can't  find it, so this crazy workaround works!!
     
 ## Verify or fix texture
 
@@ -121,3 +133,4 @@ Run in your device or android emulator. This should look like:
 ![face_rotation]({{ site.url }}/images/face_obj.gif)
 
 Enjoy it!!
+
