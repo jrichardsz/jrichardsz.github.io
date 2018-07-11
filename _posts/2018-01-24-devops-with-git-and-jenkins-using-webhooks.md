@@ -40,9 +40,6 @@ In this post I will show you how integrate git  and jenkins to make a basic devo
 
 > In this post I will show you how implement this **approach 02**.
 
-# Coming soon
-
-- I will develop a simple plugin to make life easier. This plugin will be called : **easy webhook plugin**
 
 # Prerequisites
 
@@ -90,7 +87,7 @@ Install this pluging in jenkins server:
 
 # (02) Jenkins user and password.
 
-To use as basic authentication in url, we need some user created in jenkins server.
+To use as basic authentication in url, we need some user created in jenkins server. Just create one user or use your admin user only for test.
 
 In subsequent posts I show my plugin which does not need authentication.
 
@@ -101,17 +98,19 @@ In subsequent posts I show my plugin which does not need authentication.
     ![jenkins-new-item-pipeline.png]({{ site.url }}/images/jenkins-new-item-pipeline.png)
 
 - In *build trigger* section choose : Generic Webhook Trigger
-    - This plugin allow us to extract values from **webhook_json** using **jsonpath**
-    - According to a section of entire **webhook_json** :
+
+This plugin allow us to extract values from **webhook_json** using **jsonpath**
+
+According to a section of entire **webhook_json** :
         
 <script src="https://gist.github.com/jrichardsz/828ff5f27aa06bbd2883be885fc0dd8e.js"></script>  
   
-    - If we want to extract repository name and commit author we need to use this jsonpath expressions : **$.repository.name** and **$.pusher.name**
-    - To do thath, in variable input write : **repository_name** (variable which will be extracted from json)
-    - In Expression input write : **$.repository.name**. 
-    - And check : **JSONPath**
-    - Do the same for **commit_author** variable name and **$.pusher.name** jsonpath expression.
-    - From this point, you can use **repository_name** and **commit_author** as variables in anyh part of this jenkins job.
+  - If we want to extract repository name and commit author we need to use this jsonpath expressions : **$.repository.name** and **$.pusher.name**
+  - To do thath, in variable input write : **repository_name** (variable which will be extracted from json)
+  - In Expression input write : **$.repository.name**. 
+  - And check : **JSONPath**
+  - Do the same for **commit_author** variable name and **$.pusher.name** jsonpath expression.
+  - From this point, you can use **repository_name** and **commit_author** as variables in anyh part of this jenkins job.
 
 - In **pipeline section** , choose Pipeline Script
 
@@ -187,3 +186,4 @@ This will confirm that you have a jenkins job ready to receive post from everywh
 - Configure user and roles in jenkins
 - Using token instead of user:password in generic webhook url published by jenkins
 - Show webhooks configuration for all providers : gitlab, github, bitbucket
+- I will develop a simple plugin to make life easier. This plugin will be called : **easy webhook plugin**
