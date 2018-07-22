@@ -5,7 +5,7 @@ title: About
 description: System Bachelor, Amateur  Mathematician, AI Lover
 headline: Richard Osmar Leon Ingaruca
 tags: [Richard Osmar Leon Ingaruca,Leon Ingaruca,Richard Osmar]
-modified: 2016-12-31 
+modified: 2016-12-31
 ---
 
 ![me]({{ site.url }}/images/agente.png){: .img-responsive }
@@ -13,23 +13,25 @@ modified: 2016-12-31
 >"In this world, a single blade can take you anywhere you want to go. And even though it’s a virtual world, I feel more alive in here than I ever did in the real world."
 -Sword Art Online
 
-Mi nombre es Richard Osmar Leon Ingaruca y esta es mi página personal. 
+My name is Richard Osmar Leon Ingaruca and this is my personal page.
 
-Soy un bachiller egresado de la carrera de Ingeniería Informática de la Universidad Nacional Federico Villarreal de Lima/Perú. Actualmente vengo desempeñando el cargo de arquitecto de software en el área de sistemas de una prestigiosa universidad privada en mi país.
+I am a bachelor graduated from the Computer Engineering career of the National University Federico Villarreal of Lima / Peru. I am currently working as a software architect in the systems area of ​​a prestigious private university in my country.
 
-En los años que duro la universidad comprendi algo que estaba por default en mi configuración desde niño : "La necesidad de entender el porque de todas las cosas especialmente fenómenos físicos del planeta". Los mejores cursos que recuerdo fueron matemática IV y todas las Fisicas que lleve. Entender que una ecuación diferencial puede explicar un fenómeno físico fue lo máximo. Lástima que por no ser físico no profundize en el tema.
+Currently I can not be called "engineer" because I do not present my grade thesis. This is not because I can not. The reason is because I do not want spend time in easy project o something stupid. I want to develop the number one thesis in the country :D
 
-En esta etapa tambien aprendí a programar. Es como si hubiera estado destinado a ser programador. De hecho hasta el momento en el que escribo estos parrafos es lo único para lo que sirvo (software), y es por eso que no puedo darme el lujo de ser un informático mas, sino al menos en mi entorno local, uno bueno y es por ello que paso mucha parte de mi vida, frente al computador.
+Going back to the past, in the years that hard university I understood something that was by default in my configuration since childhood: "The need to understand why all things especially physical phenomena of the planet." The best courses I remember were Mathematics IV and all the Physics theories that I have. Understanding that a differential equation can explain a physical phenomenon was the most important. It was a pity not to be a professional in the area of ​​physics or chemistry, so do not delve into the subject.
 
-Si me preguntan que es lo que me gusta, pues dire : "Programar, peliculas, series, animes, libros y compartir conocimiento". 
+In the university I learned to program. It's as if I had been destined to be a programmer. In fact until the moment I write these paragraphs is the only thing for what I serve , and that is why I can not afford to be a simple programmer. I need to be a good one, at least in my local environment, and it is why I spend a lot of my life, in front of the computer.
 
-Programo y diseño software por mi profesión. Formularios web, apis rest o aplicaciones convencionales. En mis tiempos libres , también. Si es para ayudar a alguien puedo divertirme programando software convencional, pero si es solo para mi me gusta programar cosas que según mi concepción son novedosas y/o que según google aun no existen. Puedo pasar horas de horas de mi tiempo libre, creando una pequeña aplicación que automatiza algo para mi trabajo, algun plugin, algo que vi en una película, algo de IA, un hola mundo en un nuevo lenguaje, etc. Eso es lo que me gusta hacer en mi tiempo libre y al coincidir con mi profesión pues soy muy afortunado.
+If you ask me what I like, then I will say: "Develop software, see or read about science fiction (books, movies, series and animes) and share what I am learning".
 
-Películas, series, animes o libros relacionados a ciencia ficción , me causan una profunda catarsis. No se si es algo esquizofrénico o algo peor,  pero apreciar este tipo de contenido hace que mi imaginación se expanda, me abandone o cree realidades al intentar analizar si lo que se esta proyectando es ficción, ya existe o puede ser implementado. También me gusta ver series policiacas o de espías, fbi, cia, kgb, complots, extraterrestres, espacio, guerras, etc. Estoy seguro que mi fascinación por este tipo de series se debe a que en el mundo real no me gusta dar un paso sin antes proyectar las consecuencias de este,  no tomo riesgos innecesarios ni nada parecido, entonces al ver este tipo de contenido, aprendo posibles comportamientos los cuales podría usar cuando me enfrente a escenarios como los que experimentan los personajes.
+I program and design software for my profession. Web forms, apis rest or conventional applications. In my free time, too. If it is to help someone I can have fun programming conventional software, but if it is only for me I like to program things that according to my conception are new and or according to google do not exist yet. I can spend hours of my free time, creating a small application that automates something for my work, some plugin, something I saw in a movie, some AI, a hello world in a new language, etc. That's what I like to do in my free time and since this coincides with my profession I'm very lucky.
 
-Respecto a lo de compartir conocimiento. Cuando estuve preparandome para ingresar a la universidad, recibí ayuda de un profesor que se convirtió en mi amigo. También conocí a un compañero mas joven pero mas inteligente que yo. Este compañero nos enseñaba temas matemáticos que no entendíamos y no pedía nada a cambio. Una vez nos reveló por que lo hacía : "Me gusta enseñar por que así nunca olvidaré, esto que enseño." Me di cuenta que era lo mismo que hacía mi profesor y amigo. Es por eso que desde ese entonces, me gusta compartir todo lo que voy aprendiendo sin pedir nada a cambio, mucho menos cobrar. Ustedes cobrarian por hacer algo que les gusta?
+Movies, series, animes or books related to science fiction, cause me a deep catharsis. I do not know if it is something schizophrenic or something worse, but to appreciate this type of content causes my imagination to expand, abandon me or create realities when trying to analyze if what is being projected is fiction, already exists or can be implemented. I also like to watch police or spy series based on fbi, cia, kgb, mi6, extraterrestrials, space, etc. I'm sure my fascination with this type of series is because in the real world I do not like to take a step without first projecting the consequences of this, I do not take unnecessary risks or anything like that, so when I see this type of content, I learn possible behaviors which I could use when faced with scenarios like those experienced by the characters.
 
-Finalmente para no aburrir, mi intención al crear esta pagina es compartir lo que voy aprendiendo, lo que voy viendo, lo que voy sintiendo respecto al software, inteligencia artificial, mundos virtuales y ficción.
+Regarding sharing what I'm learning. When I was preparing to enter university, I received help from a teacher who became my friend. I also met a younger but more intelligent partner than me. This fellow taught us mathematical topics that we did not understand and did not ask for anything in return. He once revealed to us why he was doing it: "I like to teach because in this way I will never forget, what I am teaching you." I realized that it was the same thing my teacher and friend did. That's why since then, I like to share everything I'm learning without charging or asking for anything in return. Would you charge for doing something you like?
 
-<a markdown="0" href="{{ site.url }}" class="btn">Check out my blog</a> 
-<a markdown="0" href="https://www.youtube.com/user/ZERL1NG" class="btn">Check out my youtube channel</a> 
+Finally not to bore, my intention to create this page is to share what I'm learning, what I'm seeing, what I'm feeling about software, artificial intelligence, virtual worlds, fiction and my eternal thesis to be considered an engineer.
+
+<a markdown="0" href="{{ site.url }}" class="btn">Check out my blog</a>
+<a markdown="0" href="https://www.youtube.com/user/ZERL1NG" class="btn">Check out my youtube channel</a>
