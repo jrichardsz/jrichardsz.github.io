@@ -11,63 +11,56 @@ In almost all web sites there are information to compile android projects with A
 
 In this post I will show you how to do it... Let's start!!
 
-![neo-shell-face](https://raw.githubusercontent.com/jrichardsz/static_resources/master/neo-shell-face.png)
+![neo-shell-face](https://raw.githubusercontent.com/jrichardsz/static_resources/master/neo-shell-face.png){: .img-responsive }
 
-# First : Download everything in this list
+# Step 1 : Download
 
-## JDK 8 (Jdk-8u171-linux-x64.tar.gz)
+- **JDK 8 (Jdk-8u171-linux-x64.tar.gz)**
 
 - Option 1 : http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
-## Android Command Line Tools (sdk-tools-linux-4333796.zip)
+- **Android Command Line Tools (sdk-tools-linux-4333796.zip)**
 
 - Option 1 : https://developer.android.com/studio/#downloads
 
 - Option 2 : https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 
-## Android SDK Build Tools (build-tools_r26-linux.zip)
+- **Android SDK Build Tools (build-tools_r26-linux.zip)**
 
 - Option 1 : https://dl.google.com/android/repository/build-tools_r26-linux.zip
 
 - Option 2 : https://androidsdkoffline.blogspot.com/p/android-sdk-build-tools.html
 
-## Platform Tools (platform-tools_r26.0.0-linux.zip)
+- **Platform Tools (platform-tools_r26.0.0-linux.zip)**
 
 - Option 1 : https://dl.google.com/android/repository/platform-tools_r26.0.0-linux.zip
 
 
-## Gradle (gradle-4.5-bin.zip)
+- **Gradle (gradle-4.5-bin.zip)**
 
 - Option 1 : https://downloads.gradle.org/distributions/gradle-4.5-bin.zip
 
-# Unzipping
+# Step 2 : Unzipping
 
-Create a folder called **/opt/java** and unzip the following files:
+Create a folder called **/opt/java/java8** and unzip the following file:
 
-## Jdk-8u171-linux-x64.tar.gz
+- Jdk-8u171-linux-x64.tar.gz
 
-/opt/java/java8
+Create a folder called **/opt/android-sdk-linux/platform-tools/** and unzip the following files:
 
-Create a folder called **/opt/android-sdk-linux** and unzip the following files:
+- platform-tools_r26.0.0-linux.zip
 
-## platform-tools_r26.0.0-linux.zip
+Create a folder called **/opt/android-sdk-linux/tools/** and unzip the following files:
+- sdk-tools-linux-4333796.zip
 
-/opt/android-sdk-linux/platform-tools/
+Create a folder called **/opt/android-sdk-linux/build-tools/26.0.0/** and unzip the following files:
+- build-tools_r26-linux.zip
 
-## sdk-tools-linux-4333796.zip
-
-/opt/android-sdk-linux/tools/
-
-## build-tools_r26-linux.zip
-
-/opt/android-sdk-linux/build-tools/26.0.0/
-
-## gradle-4.5-bin.zip
-
-/opt/gradle/gradle-4.5/
+Create a folder called **/opt/gradle/gradle-4.5/** and unzip the following files:
+- gradle-4.5-bin.zip
 
 
-Directory structures must look like :
+Directories must look like :
 
 ```
 /opt
@@ -98,7 +91,7 @@ Directory structures must look like :
 
 ```
 
-# Adding to PATH
+# Step 3 : Adding to PATH
 
 Create the following environment variables:
 
@@ -118,9 +111,9 @@ export PATH=${PATH}:$ANDROID_HOME/build-tools/26.0.0
 export PATH=${PATH}:$GRADLE_HOME/bin
 ```
 
-# Test
+# Step 4 : Testing
 
-If everything was configured correctly, the following commands must show a message:
+If everything was configured correctly, the following commands must show a success message:
 
 - java -version
 
@@ -150,7 +143,7 @@ JVM:          1.8.0_171 ...
 OS:           Linux ...
 ```
 
-# Accept android licenses
+# Step 5 : Android licenses
 
 Go to your $ANDROID_HOME/tools/bin and execute:
 
@@ -158,13 +151,7 @@ Go to your $ANDROID_HOME/tools/bin and execute:
 ./sdkmanager --licenses
 ```
 
-Accept all!!
-
-Result:
-
-```
-All SDK package licenses accepted.======] 100% Computing updates...
-```
+This will ask you to accept or reject licenses. You must accept all licenses.
 
 # That's All
 
@@ -174,3 +161,13 @@ Your environment is ready to build apk executing commands like :
 - ./gradlew android:assembleDebug
 - react native commands
 - ionic commands
+
+# Example
+
+- Clone this repository : https://github.com/codepath/android_hello_world.git
+- Run this command : **./gradlew android:assembleDebug**
+- Check your log and you will see the apk location
+- Upload to your android device and install it. Also you can use **adb** to install it.
+- You must see something like :
+
+![https://raw.githubusercontent.com/jrichardsz/static_resources/master/hello_world_android.png](https://raw.githubusercontent.com/jrichardsz/static_resources/master/hello_world_android.png){: .img-responsive }
