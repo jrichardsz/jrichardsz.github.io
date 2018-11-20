@@ -7,7 +7,7 @@ tags: [java, maven, sonar]
 comments: true  
 ---
 
-What to do when your infraestructure team or other reasons do not permit you to use SonarQube or similar platforms to insepect the source code of your java applications? 
+What to do when your infraestructure team or other reasons do not permit you to use SonarQube or similar platforms to insepect the source code of your java applications? or when SonarQube is like use a sledgehammer to crack nuts. 
 
 Maven could be helpfull. Currently there are some maven plugins related to my concern:
 
