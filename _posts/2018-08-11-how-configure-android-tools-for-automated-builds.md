@@ -17,23 +17,23 @@ In this post I will show you how to do it... Let's start!!
 
 - **JDK 8 (Jdk-8u171-linux-x64.tar.gz)**
 
-- Option 1 : http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+  - Option 1 : http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 - **Android Command Line Tools (sdk-tools-linux-4333796.zip)**
 
-- Option 1 : https://developer.android.com/studio/#downloads
+  - Option 1 : https://developer.android.com/studio/#downloads
 
-- Option 2 : https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+  - Option 2 : https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 
 - **Android SDK Build Tools (build-tools_r26-linux.zip)**
 
-- Option 1 : https://dl.google.com/android/repository/build-tools_r26-linux.zip
+  - Option 1 : https://dl.google.com/android/repository/build-tools_r26-linux.zip
 
-- Option 2 : https://androidsdkoffline.blogspot.com/p/android-sdk-build-tools.html
+  - Option 2 : https://androidsdkoffline.blogspot.com/p/android-sdk-build-tools.html
 
 - **Platform Tools (platform-tools_r26.0.0-linux.zip)**
 
-- Option 1 : https://dl.google.com/android/repository/platform-tools_r26.0.0-linux.zip
+  - Option 1 : https://dl.google.com/android/repository/platform-tools_r26.0.0-linux.zip
 
 
 - **Gradle (gradle-4.5-bin.zip)**
@@ -155,12 +155,25 @@ This will ask you to accept or reject licenses. You must accept all licenses.
 
 # That's All
 
-Your environment is ready to build apk executing commands like :
+Your environment is ready to build apk executing one of this commands :
 
-- gradle assemble
-- ./gradlew android:assembleDebug
-- react native commands
-- ionic commands
+```
+gradle assemble
+```
+
+```
+./gradlew android:assembleRelease
+```
+
+```
+./gradlew android:assembleDebug
+```
+
+Also, you can execute commands from other technologies:
+
+- React Native
+- Ionic
+- LibGDX
 
 # Example
 
