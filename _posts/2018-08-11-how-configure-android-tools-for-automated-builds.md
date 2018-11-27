@@ -155,7 +155,7 @@ This will ask you to accept or reject licenses. You must accept all licenses.
 
 # That's All
 
-Your environment is ready to build apk executing one of this commands :
+Your environment is ready to build apk executing one of these commands :
 
 ```
 gradle assemble
