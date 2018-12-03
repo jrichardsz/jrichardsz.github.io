@@ -22,16 +22,21 @@ Create a job in jenkins in which you must clone the git repository at regular in
 
 > This is simple but, hardware consumption is elevated and is a little **outdated**
 
+<br><br>
 
 # Approach 02
 
 Using the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and some jenkins plugin related to your git repository provider ([github plugin](https://wiki.jenkins.io/display/JENKINS/GitHub+Plugin) , [bitbucket plugin](https://wiki.jenkins.io/display/JENKINS/Bitbucket+Plugin), [gitlab plugin](https://wiki.jenkins.io/display/JENKINS/GitLab+Plugin)) create a jenkins job to launch some tasks.
+
+<br><br>
 
 # Approach 03
 
 Using the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and some jenkins plugin like   [https://wiki.jenkins.io/display/JENKINS/Generic+Webhook+Trigger+Plugin](https://wiki.jenkins.io/display/JENKINS/Generic+Webhook+Trigger+Plugin) create a jenkins job to launch some tasks( security configurations are required).
 
 Read this post if you are interested in this plugin: https://jrichardsz.github.io/devops/jenkins-generic-webhook-trigger-plugin-for-devops-with-jenkins
+
+<br><br>
 
 # Approach 04
 
@@ -40,7 +45,7 @@ Use the latest functionality provided by github, gitlab, bitbucket, etc called :
 
 > In this post I will show you how implement this **approach 04** because is easy, ready to use and has a pre-configured steps to make life simpler.
 
-<br><br><br><br>
+<br><br>
 
 # Proposed flow
 
@@ -103,6 +108,7 @@ Use the latest functionality provided by github, gitlab, bitbucket, etc called :
 <img src="https://memegenerator.net/img/instances/500x/72913234/lets-begin.jpg" width="300" style="display:  block;margin-left:  auto;margin-right: auto;">
 <br>
 
+<br><br>
 # (01) Configure required plugins in jenkins.
 
 Install this pluging in jenkins server:
@@ -115,6 +121,8 @@ Install this pluging in jenkins server:
 
 - [Pipeline Plugin](https://jenkins.io/doc/book/pipeline/)
   - In order to create our workflows as [pipelines](https://www.sumologic.com/devops/understand-build-continuous-delivery-pipeline/) (build -> test -> sonar -> deploy -> etc) programmatically with groovy.
+
+<br><br>
 
 # (02) Create a jenkins job
 
@@ -136,6 +144,8 @@ Install this pluging in jenkins server:
 
 - Save job configuration.
 
+<br><br>
+
 # (03) Configure Bitbucket webhook
 
 After configure the easy webhook plugin (https://github.com/utec/easy-webhook-plugin#usage), a new http url will be ready to use as webhook url. 
@@ -152,6 +162,8 @@ Your webhook url will be:
 http://my_jenkins.com/easy-webhook-plugin_123456789/?gitRepositoryManagementId=bitbucket&jobId=my_awesome_jenkins_job
 
 Follow this post to add this url as webhook in your git repository provider : [https://jrichardsz.github.io/devops/configure-webhooks-in-github-bitbucket-gitlab](https://jrichardsz.github.io/devops/configure-webhooks-in-github-bitbucket-gitlab)
+
+<br><br>
 
 # (04) Test
 
