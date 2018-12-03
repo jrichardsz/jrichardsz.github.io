@@ -9,7 +9,7 @@ comments: true
 
 In this post I will show you how integrate git  and jenkins to make a basic devops routine using webhooks.
 
-![https://www.fourkitchens.com/wp-content/uploads/2017/01/Jenkins_git_0.png](https://www.fourkitchens.com/wp-content/uploads/2017/01/Jenkins_git_0.png)
+![home_page](https://raw.githubusercontent.com/jrichardsz/static_resources/master/easy-webhook-plugin.png)
 
 # Requirement
 
@@ -23,22 +23,54 @@ In this post I will show you how integrate git  and jenkins to make a basic devo
 
 # Approach 02
 
-- Use the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and some configurations in our Jenkins platform.
-- This is the proposed flow :
+- Using the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and some jenkins plugin related to your git repository provider ([github plugin](https://wiki.jenkins.io/display/JENKINS/GitHub+Plugin) , [bitbucket plugin](https://wiki.jenkins.io/display/JENKINS/Bitbucket+Plugin), [gitlab plugin](https://wiki.jenkins.io/display/JENKINS/GitLab+Plugin)) create a jenkins job to launch some tasks.
+
+# Approach 03
+
+- Using the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and some jenkins plugin like   [https://wiki.jenkins.io/display/JENKINS/Generic+Webhook+Trigger+Plugin](https://wiki.jenkins.io/display/JENKINS/Generic+Webhook+Trigger+Plugin) create a jenkins job to launch some tasks( security configurations are required).
+
+Read this post if you are interested in this plugin: https://jrichardsz.github.io/devops/jenkins-generic-webhook-trigger-plugin-for-devops-with-jenkins
+
+# Approach 04
+
+- Use the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and this generic and easy jenkins plugin [https://github.com/utec/easy-webhook-plugin](https://github.com/utec/easy-webhook-plugin) ,  create a jenkins job to launch some tasks.
+
+> In this post I will show you how implement this **approach 03** because is easy, ready to use and has a pre-configured steps to make life simpler.
+
+# Proposed flow
 
 ![webhook-flow](https://raw.githubusercontent.com/airavata-courses/TeamAlpha/master/Airavata_Remote_Job_Runner/Instructions/Jenkins.png)
 
-- Instead of tomcat and postgress you could use any technology.
-- In the arrow from github to jenkins we appreciate a string **webhook**. This represent a json sent from github to jenkins. We will call **webhook_json** to this json. In this json, github send us data like :
-  - git repository name
-  - branch which was changed
-  - commit id
-  - commit message
-  - commit author
-  - etc
-- This is an example of webhook json sent by github when a push is performed : [https://gist.github.com/jrichardsz/3ded3cb429d51cc826373e8bded15a8f](https://gist.github.com/jrichardsz/3ded3cb429d51cc826373e8bded15a8f)  
+- Developer push some source code (java, php, nodejs, etc)
+- Your git platform (bitbucket, gitlab, github, etc) detects this event and perform an http post request to your webhook url (preconfigured in github and jenkins) sending it a json payload with important information related to detected event.
+- Jenkins receive the http post request and using the easy-webhook-plugin
+, will parse the json payload and extract some important or common values used in devops automation like : branch name, commit author, commit message, etc
+- Jenkins launch a preconfigured job. In this job you could extract use the previously extracted values like branch name. At this point you could start, launch or invoke any technology. (tomcat and postgress in flow image)
 
-> In this post I will show you how implement this **approach 02**.
+# Previous knowledge
+
+- Webhook
+
+  First, what is a webhook? The concept of a webhook is simple. A webhook is an HTTP callback, an HTTP POST that occurs when something happens through a simple event-notification via HTTP POST.
+
+  For instance, GitHub webhooks in Jenkins are used to trigger the build whenever a developer commits something to the master branch.
+
+  In the proposed flow, We can appreciate an arrow from github to jenkins called **webhook**. This represent a json sent from github to jenkins. We will call **webhook_json** to this json. In this json, github send us data like :
+    - git repository name
+    - branch which was changed
+    - commit id
+    - commit message
+    - commit author
+    - etc
+
+  This is an example of webhook json sent by github when a push is performed : [https://gist.github.com/jrichardsz/3ded3cb429d51cc826373e8bded15a8f](https://gist.github.com/jrichardsz/3ded3cb429d51cc826373e8bded15a8f)  
+
+- JSONPath specification
+
+  - Understand this specification that allow us lookup values from complicated json nodes in a easy way.
+  - [http://jsonpath.com/](http://jsonpath.com/)  
+  - [http://goessner.net/articles/JsonPath/](http://goessner.net/articles/JsonPath/)
+  - This will help us to extract values from our **webhook_json**
 
 
 # Prerequisites
@@ -51,14 +83,8 @@ In this post I will show you how integrate git  and jenkins to make a basic devo
 
 - Git repository
 
-  - We need some repository without errors and ready to build. For this post we will use a public github repository to avoid authentication configurations like : ssh-agent, ssh keys, etc. 
+  - We need some git repository without errors and ready to build. For this post we will use a public github repository to avoid authentication configurations like : ssh-agent, ssh keys, etc. 
   - In subsequent posts I will show the exact steps to do this.
-  
-- JSONPath specification
-  - Understand this specification that allow us lookup values from complicated json nodes in a easy way.
-  - [http://jsonpath.com/](http://jsonpath.com/)  
-  - [http://goessner.net/articles/JsonPath/](http://goessner.net/articles/JsonPath/)
-  - This will help us to extract values from our **webhook_json**
 
 # Steps
 
@@ -79,111 +105,76 @@ Install this pluging in jenkins server:
 - [Locale Plugin](https://wiki.jenkins.io/display/JENKINS/Locale+Plugin)
   - In order to change languaje to english because 90% of errors, issues and documentation are in english.
 
-- [Generic Webhook Trigger Plugin](https://wiki.jenkins.io/display/JENKINS/Generic+Webhook+Trigger+Plugin)  
-   In order to expose a public endpoint to triggering the jenkins job
+- [Easy Webhook Plugin](https://github.com/utec/easy-webhook-plugin)  
+   In order to expose a public endpoint to triggering a jenkins job. Follow this instructions : https://github.com/utec/easy-webhook-plugin#usage
 
 - [Pipeline Plugin](https://jenkins.io/doc/book/pipeline/)
   - In order to create our workflows as [pipelines](https://www.sumologic.com/devops/understand-build-continuous-delivery-pipeline/) (build -> test -> sonar -> deploy -> etc) programmatically with groovy.
 
-# (02) Jenkins user and password.
+# (02) Create a jenkins job
 
-To use as basic authentication in url, we need some user created in jenkins server. Just create one user or use your admin user only for test.
+- In jenkins home page click en new item and select "pipeline", enter an item name and click in ok:
 
-In subsequent posts I show my plugin which does not need authentication.
+    ![jenkins-new-item-pipeline.png](https://www.baeldung.com/wp-content/uploads/2017/12/jenkins3.png)
 
-# (03) Create a jenkins job
-
-- In jenkins home page click en new item and select "pipeline" and enter an item name:
-
-    ![jenkins-new-item-pipeline.png]({{ site.url }}/images/jenkins-new-item-pipeline.png)
-
-- In *build trigger* section choose : Generic Webhook Trigger
-
-This plugin allow us to extract values from **webhook_json** using **jsonpath**
-
-According to a section of entire **webhook_json** :
-        
-<script src="https://gist.github.com/jrichardsz/828ff5f27aa06bbd2883be885fc0dd8e.js"></script>  
-  
-  - If we want to extract repository name and commit author we need to use this jsonpath expressions : **$.repository.name** and **$.pusher.name**
-  - To do thath, in variable input write : **repository_name** (variable which will be extracted from json)
-  - In Expression input write : **$.repository.name**. 
-  - And check : **JSONPath**
-  - Do the same for **commit_author** variable name and **$.pusher.name** jsonpath expression.
-  - From this point, you can use **repository_name** and **commit_author** as variables in anyh part of this jenkins job.
+- Add parameters using **This project is parameterized** option:
+  - string parameter : repositoryName
+  - string parameter : branchName
 
 - In **pipeline section** , choose Pipeline Script
 
     ![jenkins-pipeline-input-box.png]({{ site.url }}/images/jenkins-pipeline-input-box.png)
 
-  And in the input put this lines:
+  And add the following script into the text area:
 
-<script src="https://gist.github.com/jrichardsz/ae0f32b1fd695b3647ff159b46ae6751.js"></script>
+<script src="https://gist.github.com/jrichardsz/a62e3790c6db7654808528bd5e5a385f.js"></script>
 
 - Save job configuration.
 
-This configuration enable an url ready to configure in some git provider :
+# (03) Configure Bitbucket webhook
 
-```
-http://JENKINS_HOST:JENKINS_PORT/generic-webhook-trigger/invoke
-```
+After configure the easy webhook plugin (https://github.com/utec/easy-webhook-plugin#usage), a new http url will be ready to use as webhook url. 
 
-But if you test this url, jenkins shows you an error related to authentication, that is why we need some user and password to make a basic authentication in url:
+For instance, if you have this scenario :
 
-```
-http://some_user:some_password@JENKINS_HOST:JENKINS_PORT/generic-webhook-trigger/invoke
-```
+- jenkins public domain : http://my_jenkins.com
+- jenkins job : my_awessome_jenkins_job
+- easy webhook key : 123456789
+- git repository provider : bitbucket
 
-The previous url is ready to use in webhook configuration whether bitbucket, gitlab or github (this example)
+Your webhook url will be:
 
-# (04) Configure Bitbucket webhook
+http://my_jenkins.com/easy-webhook-plugin_123456789/?gitRepositoryManagementId=bitbucket&jobId=my_awesome_jenkins_job
 
-Now we must add this url as webhook endpoint in our git provider. Also select push event and json. This is similar in github, bitbucket or gitlab:
+Follow this post to add this url as webhook in your git repository provider : [https://jrichardsz.github.io/devops/configure-webhooks-in-github-bitbucket-gitlab](https://jrichardsz.github.io/devops/configure-webhooks-in-github-bitbucket-gitlab)
 
-- http://JENKINS_HOST:JENKINS_PORT/generic-webhook-trigger/invoke
-
-- Bitbucket
-  ![bitbucket-webhook-configuration.png]({{ site.url }}/images/webhooks-bitbucket.jpg)
-
-- Github
- ![github-webhook-configuration.png]({{ site.url }}/images/github-webhook-configuration.png)
-
-- Gitlab
- ![gitlab-webhook-configuration.png]({{ site.url }}/images/gitlab-webhooks.png)
-
-# (05) Test this flow 
+# (04) Test
 
 - Pushing to github
 
-After all steps, you just need push some change to your git repository and , this git provider will be execute the url published by jenkins, and jenkins job will be launched.
+  After all steps, you just need push some change to your git repository and , this git provider will be execute the url published by jenkins, and jenkins job will be launched.
 
-But beware that each one of git providers , send a different json to jenkins. So you need to create a custom jsonpath expression depends of your git provider.
+  But beware that each one of git providers , send a different json to jenkins. **Easy Webhook Plugin** helps for bitbucket, github and gitlab. If you are using other git repository platform, you must to create a custom jsonpath expression in global plugin configuration.
 
 - With command line
 
-When webhook is configured in your git repository, this will post to your public endpoint with a json contains information about git event. For example : user who commit, branch pushed, git url to clone, commit, message, etc. This json is different in github, bitbucket, gitlab, etc
+  In order to test this flow simulating some git event, We will use **curl** command to send a simple json to our job:
 
-In order to test this job or simulate some git event, wen will use **curl** command to send a simple json to our job:
+  <script src="https://gist.github.com/jrichardsz/af8321b413e0c37028197046c407e10a.js"></script>
+  
+  **webhook_payload.json** must be a correct json. You could use :
+  
+    - [webhook json from github](https://gist.github.com/jrichardsz/d8017ec4195dd3cd51a5e4fc8ce9eb3e#file-github_json_webhook_payload-json)
+    - [webhook json from bitbucket](https://gist.github.com/jrichardsz/52edc692ea6876f6409f93d1d2b1e175#file-bitbucket_json_webhook_push_payload-json)
 
-<script src="https://gist.github.com/jrichardsz/71249d4d5531060aca924cf3cf0dbceb.js"></script>
+- Verify jenkins job execution
 
-- Verify on jenkins server
+  If everything is well,you will see a job execution in your jenkins:
 
- If no errors, you will see a success response in commanline and in your jenkins you will see a job execution:
+  ![jenkins-pipeline-input-box.png]({{ site.url }}/images/job_history.png)
 
- ![jenkins-pipeline-input-box.png]({{ site.url }}/images/job_history.png)
+  Click in job console of this execution and you will see :
 
-Click in job console of this execution and you will see :
-
- ![jenkins-pipeline-input-box.png]({{ site.url }}/images/job_webhook_console.png)
+  ![jenkins-pipeline-input-box.png](https://raw.githubusercontent.com/jrichardsz/static_resources/master/jenkins_build_easy_webhook_plugin.png)
 
 This will confirm that you have a jenkins job ready to receive post from everywhere like bitbucket, github, gitlab, etc
-
-
-# Coming soon
-
-- Configure authentication for git
-- Configure user and roles in jenkins
-- Using token instead of user:password in generic webhook url published by jenkins
-- Show webhooks configuration for all providers : gitlab, github, bitbucket
-- I will develop a simple plugin to make life easier. This plugin will be called : **easy webhook plugin**
