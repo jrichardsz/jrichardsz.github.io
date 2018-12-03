@@ -19,7 +19,9 @@ In this post I will show you how integrate git  and jenkins to make a basic devo
 
 - Create a job in jenkins in which you must clone the git repository at regular intervals. 
 
+
 > This is simple but, hardware consumption is elevated and is a little **outdated**
+
 
 # Approach 02
 
@@ -35,7 +37,9 @@ Read this post if you are interested in this plugin: https://jrichardsz.github.i
 
 - Use the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and this generic and easy jenkins plugin [https://github.com/utec/easy-webhook-plugin](https://github.com/utec/easy-webhook-plugin) ,  create a jenkins job to launch some tasks.
 
-> In this post I will show you how implement this **approach 03** because is easy, ready to use and has a pre-configured steps to make life simpler.
+
+> In this post I will show you how implement this **approach 04** because is easy, ready to use and has a pre-configured steps to make life simpler.
+
 
 # Proposed flow
 
