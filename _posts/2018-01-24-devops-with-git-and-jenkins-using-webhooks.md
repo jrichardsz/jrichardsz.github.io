@@ -17,7 +17,7 @@ In this post I will show you how integrate git  and jenkins to make a basic devo
 
 # Approach 01
 
-- Create a job in jenkins in which you must clone the git repository at regular intervals. 
+Create a job in jenkins in which you must clone the git repository at regular intervals. 
 
 
 > This is simple but, hardware consumption is elevated and is a little **outdated**
@@ -25,22 +25,22 @@ In this post I will show you how integrate git  and jenkins to make a basic devo
 
 # Approach 02
 
-- Using the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and some jenkins plugin related to your git repository provider ([github plugin](https://wiki.jenkins.io/display/JENKINS/GitHub+Plugin) , [bitbucket plugin](https://wiki.jenkins.io/display/JENKINS/Bitbucket+Plugin), [gitlab plugin](https://wiki.jenkins.io/display/JENKINS/GitLab+Plugin)) create a jenkins job to launch some tasks.
+Using the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and some jenkins plugin related to your git repository provider ([github plugin](https://wiki.jenkins.io/display/JENKINS/GitHub+Plugin) , [bitbucket plugin](https://wiki.jenkins.io/display/JENKINS/Bitbucket+Plugin), [gitlab plugin](https://wiki.jenkins.io/display/JENKINS/GitLab+Plugin)) create a jenkins job to launch some tasks.
 
 # Approach 03
 
-- Using the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and some jenkins plugin like   [https://wiki.jenkins.io/display/JENKINS/Generic+Webhook+Trigger+Plugin](https://wiki.jenkins.io/display/JENKINS/Generic+Webhook+Trigger+Plugin) create a jenkins job to launch some tasks( security configurations are required).
+Using the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and some jenkins plugin like   [https://wiki.jenkins.io/display/JENKINS/Generic+Webhook+Trigger+Plugin](https://wiki.jenkins.io/display/JENKINS/Generic+Webhook+Trigger+Plugin) create a jenkins job to launch some tasks( security configurations are required).
 
 Read this post if you are interested in this plugin: https://jrichardsz.github.io/devops/jenkins-generic-webhook-trigger-plugin-for-devops-with-jenkins
 
 # Approach 04
 
-- Use the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and this generic and easy jenkins plugin [https://github.com/utec/easy-webhook-plugin](https://github.com/utec/easy-webhook-plugin) ,  create a jenkins job to launch some tasks.
+Use the latest functionality provided by github, gitlab, bitbucket, etc called : **webhooks** and this generic and easy jenkins plugin [https://github.com/utec/easy-webhook-plugin](https://github.com/utec/easy-webhook-plugin) ,  create a jenkins job to launch some tasks.
 
 
 > In this post I will show you how implement this **approach 04** because is easy, ready to use and has a pre-configured steps to make life simpler.
 
-<br>
+<br><br><br><br>
 
 # Proposed flow
 
