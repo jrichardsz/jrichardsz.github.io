@@ -40,6 +40,7 @@ Read this post if you are interested in this plugin: https://jrichardsz.github.i
 
 > In this post I will show you how implement this **approach 04** because is easy, ready to use and has a pre-configured steps to make life simpler.
 
+<br>
 
 # Proposed flow
 
