@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to deploy java application in a cloud instance from the scratch to and advanced architecture ?
+title: How to deploy java application in a cloud instance from the scratch to an advanced architecture ?
 description: "Deploy in compute engine instance of google not substantially different from AWS, Azure or another linux host provider"
 category: devops
 tags: [devops,jenkins,git,java,linux]
@@ -125,7 +125,7 @@ This will be necessary when more and more web applications, microservices are re
 
 # #6 Saas
 
-- All the previous approaches could be **simplified** using WORLD CLASS platforms like:
+All the previous approaches could be **simplified** using WORLD CLASS platforms like:
 
 - Jelastic
 - Heroku
