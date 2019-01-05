@@ -112,7 +112,18 @@ Improvements: Parametrize repository name, branch name, mvn profile, database cr
 
 When you are ready to deploy, just push the code to your scm, jenkins will be notified and will execute the previous created job. As you can see, there is no human required to deploy de application in the server(With the exception of developer push)
 
+**Note:** At this point, you could migrate the scripts of approaches #1 and #2 to :
+
+- Jenkins pipeline script
+  - https://gist.github.com/jrichardsz/a62e3790c6db7654808528bd5e5a385f#file-jenkins_scripted_pipeline_java_mvn_basic-js
+- Jenkins declarative pipeline
+  - https://gist.github.com/jrichardsz/a62e3790c6db7654808528bd5e5a385f#file-jenkins_declarative_pipeline_hello_world-js
+
+These are more advanced and scalable approaches to mapping all the commands and configurations required from the beginning to the deployment.
+
 # #5 Advanced (Sysadmin team or extra people and knowledge are required )
+
+More instances and technologies will be required.
 
 - Kubernetes
 - Ansible
