@@ -3,7 +3,7 @@ layout: post
 title: Find unused classes and more in a Java source code
 description: "Find unused classes and more in a Java source code"
 category: java
-tags: [java, maven, sonar]
+tags: [java, maven, sonar,todo]
 comments: true  
 ---
 
