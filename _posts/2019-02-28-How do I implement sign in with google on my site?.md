@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How to deploy java application in a cloud instance from the scratch to an advanced architecture ?
-description: "Deploy in compute engine instance of google not substantially different from AWS, Azure or another linux host provider"
-category: devops
-tags: [devops,jenkins,git,java,linux]
+title: How do i implement sign in with google on my site?
+description: "How do i implement ‘sign in with google’ on my site?"
+category: sso auth oauth
+tags: [security]
 comments: true  
 ---
 
