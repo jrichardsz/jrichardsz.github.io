@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How configure linux shell for automated android builds without android studio
+title: How to build an android apk using only linux for devops automation?
 description: "In almost all web sites there are information to compile android projects with Android Studio..."
 category: android
 tags: [android, devops, linux]
