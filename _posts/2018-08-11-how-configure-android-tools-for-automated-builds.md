@@ -151,7 +151,12 @@ Go to your $ANDROID_HOME/tools/bin and execute:
 ./sdkmanager --licenses
 ```
 
-This will ask you to accept or reject licenses. You must accept all licenses.
+This will ask you to accept or reject licenses. You must accept all licenses, pressgin key "y" and enter
+
+```
+---------------------------------------
+Accept? (y/N): y
+```
 
 # That's All
 
@@ -167,6 +172,13 @@ gradle assemble
 
 ```
 ./gradlew android:assembleDebug
+```
+
+You must be something like this in your log:
+
+```
+Starting a Gradle Daemon (subsequent builds will be faster)
+<======-------> 50% CONFIGURING [21s]
 ```
 
 Also, you can execute commands from other technologies:
