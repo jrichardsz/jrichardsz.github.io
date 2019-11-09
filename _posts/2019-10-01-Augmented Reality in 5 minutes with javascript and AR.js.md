@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Augmented Reality in 5 minutes with javascript and AR.js
