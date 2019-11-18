@@ -15,7 +15,7 @@ In this post I will show you how to configure a webhook in the most used git rep
 
 - Public http url, able to receive POST request with json body. This url could be a simple http app with nodejs, ruby, java, php or something advanced like jenkins, travis, etc
 
-# Steps 
+# Steps
 
 We just need to add the public url in **webhook** section and select some event like git push. This is similar in github, bitbucket or gitlab
 
@@ -29,6 +29,14 @@ We just need to add the public url in **webhook** section and select some event 
 
 # Gitlab
 
-![gitlab-webhook-configuration.png]({{ site.url }}/images/gitlab-webhooks.png)
+Go to integrations option in your git repository. Something like this:
+
+https://gitlab.com/my_name/my_repo/-/settings/integrations
+
+Secret token is not required and select **push** event.
+
+![gitlab-webhook-configuration.png](https://raw.githubusercontent.com/jrichardsz/static_resources/master/gitlab/gitlab-webhook-configurations.png)
+
+
 
 > Thats all!! Your git repository provider is ready to send webhook payloads to your public url.

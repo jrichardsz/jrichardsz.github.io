@@ -17,7 +17,7 @@ In this post I will show you how integrate git  and jenkins to make a basic devo
 
 # Approach 01
 
-Create a job in jenkins in which you must clone the git repository at regular intervals. 
+Create a job in jenkins in which you must clone the git repository at regular intervals.
 
 
 > This is simple but, hardware consumption is elevated and is a little **outdated**
@@ -49,7 +49,7 @@ Use the latest functionality provided by github, gitlab, bitbucket, etc called :
 
 # Proposed flow
 
-![webhook-flow](https://raw.githubusercontent.com/airavata-courses/TeamAlpha/master/Airavata_Remote_Job_Runner/Instructions/Jenkins.png)
+![webhook-flow](https://raw.githubusercontent.com/jrichardsz/static_resources/master/jenkins/jenkins-webhook-flow.png)
 
 - Developer push some source code (java, php, nodejs, etc)
 - Your git platform (bitbucket, gitlab, github, etc) detects this event and perform an http post request to your webhook url (preconfigured in github and jenkins) sending it a json payload with important information related to detected event.
@@ -87,25 +87,26 @@ Use the latest functionality provided by github, gitlab, bitbucket, etc called :
 
 - Jenkins Server
 
-  - We need an instance ready to use of the latest version of this CI Server. 
+  - We need an instance ready to use of the latest version of this CI Server.
   - This is the common way to install jenkins on linux: [https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04)
   - Openshift is a easy and fast way to get an online jenkins server.
 
 - Git repository
 
-  - We need some git repository without errors and ready to build. For this post we will use a public github repository to avoid authentication configurations like : ssh-agent, ssh keys, etc. 
+  - We need some git repository without errors and ready to build. For this post we will use a public github repository to avoid authentication configurations like : ssh-agent, ssh keys, etc.
   - In subsequent posts I will show the exact steps to do this.
 
 # Steps
 
 1. Configure required plugins in jenkins.
-2. Jenkins user and password.
-3. Create a jenkins job which will be triggered by our git provider (github in this case). This job publish an http url ready to use. We will call **webhook_url** to this url.
-4. Configure **webhook_url** in webhook section of github of some repository.
-5. Test this flow, pushing some change to our git repository or simulating it using commandline.
+2. Create a jenkins job which will be triggered by our git provider (gitlab in this example).
+3. Get the **webhook url**
+4. Test with curl
+5. Configure the **webhook url** in your git provider (gitlab in this example).
+6. Git push using some git platform : github, bitbucket or gitlab (this example)
 
 <br>
-<img src="https://memegenerator.net/img/instances/500x/72913234/lets-begin.jpg" width="300" style="display:  block;margin-left:  auto;margin-right: auto;">
+<img src="https://raw.githubusercontent.com/jrichardsz/static_resources/master/meme/meme-lets-start.jpg" width="300" style="display:  block;margin-left:  auto;margin-right: auto;">
 <br>
 
 <br><br>
@@ -116,11 +117,14 @@ Install this pluging in jenkins server:
 - [Locale Plugin](https://wiki.jenkins.io/display/JENKINS/Locale+Plugin)
   - In order to change languaje to english because 90% of errors, issues and documentation are in english.
 
-- [Easy Webhook Plugin](https://github.com/utec/easy-webhook-plugin)  
-   In order to expose a public endpoint to triggering a jenkins job. Follow this instructions : https://github.com/utec/easy-webhook-plugin#usage
-
 - [Pipeline Plugin](https://jenkins.io/doc/book/pipeline/)
   - In order to create our workflows as [pipelines](https://www.sumologic.com/devops/understand-build-continuous-delivery-pipeline/) (build -> test -> sonar -> deploy -> etc) programmatically with groovy.
+
+- [Easy Webhook Plugin](https://github.com/utec/easy-webhook-plugin)  
+   In order to expose a public endpoint to triggering a jenkins job. Follow these instructions to install and configure this plugin:
+    - https://github.com/utec/easy-webhook-plugin#plugin-installation
+    - https://github.com/utec/easy-webhook-plugin#plugin-configuration
+
 
 <br><br>
 
@@ -130,9 +134,7 @@ Install this pluging in jenkins server:
 
     ![jenkins-new-item-pipeline.png](https://www.baeldung.com/wp-content/uploads/2017/12/jenkins3.png)
 
-- Add parameters using **This project is parameterized** option:
-  - string parameter : repositoryName
-  - string parameter : branchName
+- Parameters are nor required. Plugin will inject them
 
 - In **pipeline section** , choose Pipeline Script
 
@@ -140,58 +142,70 @@ Install this pluging in jenkins server:
 
   And add the following script into the text area:
 
-<script src="https://gist.github.com/jrichardsz/a62e3790c6db7654808528bd5e5a385f.js"></script>
+<script src="https://gist.github.com/jrichardsz/a62e3790c6db7654808528bd5e5a385f#file-jenkins_scripted_pipeline_print_params-js"></script>
 
 - Save job configuration.
 
 <br><br>
 
-# (03) Configure Bitbucket webhook
+# (03) Get the webhook url
 
-After configure the easy webhook plugin (https://github.com/utec/easy-webhook-plugin#usage), a new http url will be ready to use as webhook url. 
+After configure the easy webhook plugin, a new http url will be ready to use as webhook url.
 
-For instance, if you have this scenario :
+After a success installation and configuration you could have this scenario :
 
-- jenkins public domain : http://my_jenkins.com
-- jenkins job : my_awessome_jenkins_job
-- easy webhook key : 123456789
-- git repository provider : bitbucket
+| Parameter        | Description  | Example  |
+|:------------- |:-----|:----
+| jenkins host      | ip or public domain |  my_jenkins.com or localhost:8080
+| easy webhook secret key      | plugin configuration | 123456789
+| scmId      | one of the well known scm: gitlab, bitbucket or github | gitlab
+| jobId      | name of any existent jenkins job | hello_word_job
 
-Your webhook url will be:
 
-http://my_jenkins.com/easy-webhook-plugin_123456789/?gitRepositoryManagementId=bitbucket&jobId=my_awesome_jenkins_job
+With the previous parameters, your webhook url will be:
+
+http://my_jenkins.com/easy-webhook-plugin-123456789/?scmId=gitlab&jobId=hello_word_job
+
+<br><br>
+# (04) Test with curl
+
+In order to test this plugin, we will simulate a gitlab push event using curl.
+
+For this test, we need a **exact** gitlab webhook json sample. Here an [example](https://gist.github.com/jrichardsz/3d55df91181e3fb83089d08ada6809a8)
+
+Download this json and save in some file like: /tmp/gitlab_webhook.json
+
+I everything is good, you can exec this curl:
+
+```
+curl -d @/tmp/gitlab_webhook.json \
+-H "Content-Type: application/json" \
+-X POST "http://my_jenkins.com/easy-webhook-plugin-123456789/?scmId=gitlab&jobId=hello_word_job"
+```
+
+If you go to your jenkins home, you must see a new build execution in your **hello_word_job** job
+
+<br><br>
+# (05) Configure the **webhook url** in your git provider
 
 Follow this post to add this url as webhook in your git repository provider : [https://jrichardsz.github.io/devops/configure-webhooks-in-github-bitbucket-gitlab](https://jrichardsz.github.io/devops/configure-webhooks-in-github-bitbucket-gitlab)
 
 <br><br>
+# (06) Git push
 
-# (04) Test
+If the previous test with curl worked, your webhook is ready to use :D with any git platform (gitlab for example).
 
-- Pushing to github
+Create some git repository and add the following url as webhook for **push** events. Check this [post](https://jrichardsz.github.io/devops/configure-webhooks-in-github-bitbucket-gitlab) to get a detailed guide for bitbucket, github and gitlab.
 
-  After all steps, you just need push some change to your git repository and , this git provider will be execute the url published by jenkins, and jenkins job will be launched.
+The url to register will be something like this:
 
-  But beware that each one of git providers , send a different json to jenkins. **Easy Webhook Plugin** helps for bitbucket, github and gitlab. If you are using other git repository platform, you must to create a custom jsonpath expression in global plugin configuration.
+  `
+http://my_jenkins.com/easy-webhook-plugin-123456789/?scmId=gitlab&jobId=hello_word_job
+  `
+Or if you want, add new http query parameter like **notificationUsers**
 
-- With command line
+  `
+http://my_jenkins.com/easy-webhook-plugin-123456789/?scmId=gitlab&jobId=hello_word_job&notificationUsers=jane.doe@blindspot.com
+  `
 
-  In order to test this flow simulating some git event, We will use **curl** command to send a simple json to our job:
-
-  <script src="https://gist.github.com/jrichardsz/af8321b413e0c37028197046c407e10a.js"></script>
-  
-  **webhook_payload.json** must be a correct json. You could use :
-  
-    - [webhook json from github](https://gist.github.com/jrichardsz/d8017ec4195dd3cd51a5e4fc8ce9eb3e#file-github_json_webhook_payload-json)
-    - [webhook json from bitbucket](https://gist.github.com/jrichardsz/52edc692ea6876f6409f93d1d2b1e175#file-bitbucket_json_webhook_push_payload-json)
-
-- Verify jenkins job execution
-
-  If everything is well,you will see a job execution in your jenkins:
-
-  ![jenkins-pipeline-input-box.png]({{ site.url }}/images/job_history.png)
-
-  Click in job console of this execution and you will see :
-
-  ![jenkins-pipeline-input-box.png](https://raw.githubusercontent.com/jrichardsz/static_resources/master/jenkins_build_easy_webhook_plugin.png)
-
-This will confirm that you have a jenkins job ready to receive post from everywhere like bitbucket, github, gitlab, etc
+Finally, just **git push** some change and go to your Jenkins to see the new build in progress :D
