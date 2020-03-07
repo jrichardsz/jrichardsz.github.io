@@ -7,5 +7,6 @@ tags: [docker, wordpress, mysql]
 comments: true  
 ---
 
-Go to :
-- ![https://medium.com/@jrichardsz.java/wordpress-with-docker-2020-in-1-minute-207f40b6bb0c](https://medium.com/@jrichardsz.java/wordpress-with-docker-2020-in-1-minute-207f40b6bb0c)
+In this post I will show you how start your wordpress in just 1 minute!
+
+[read more](https://medium.com/@jrichardsz.java/wordpress-with-docker-2020-in-1-minute-207f40b6bb0c)
