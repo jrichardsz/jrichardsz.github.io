@@ -3,8 +3,8 @@ layout: page
 permalink: /about/index.html
 title: About
 description: System Bachelor, Amateur  Mathematician, AI Lover
-headline: Richard Osmar Leon Ingaruca
-tags: [Richard Osmar Leon Ingaruca,Leon Ingaruca,Richard Osmar]
+headline: JRichardsz
+tags: [JRichardsz]
 modified: 2016-12-31
 ---
 
@@ -13,7 +13,7 @@ modified: 2016-12-31
 >"In this world, a single blade can take you anywhere you want to go. And even though it’s a virtual world, I feel more alive in here than I ever did in the real world."
 -Sword Art Online
 
-My name is Richard Osmar Leon Ingaruca and this is my personal page.
+My name is JRichardsz and this is my personal page.
 
 I am a bachelor graduated from the Computer Engineering career of the National University Federico Villarreal of Lima / Peru. I am currently working as a software architect in the systems area of ​​a prestigious private university in my country.
 
@@ -33,5 +33,5 @@ Regarding sharing what I'm learning. When I was preparing to enter university, I
 
 Finally not to bore, my intention to create this page is to share what I'm learning, what I'm seeing, what I'm feeling about software, artificial intelligence, virtual worlds, fiction and my eternal thesis to be considered an engineer.
 
-<a markdown="0" href="{{ site.url }}" class="btn">Check out my blog</a>
-<a markdown="0" href="https://www.youtube.com/user/ZERL1NG" class="btn">Check out my youtube channel</a>
+<!-- <a markdown="0" href="{{ site.url }}" class="btn">Check out my blog</a>
+<a markdown="0" href="https://www.youtube.com/channel/UCkNM-MlGwCo9kxcXLqKn8yQ" class="btn">Check out my youtube channel</a> -->
