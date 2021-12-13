@@ -75,7 +75,7 @@ sudo supervisorctl status
 
 In the previous sample, we are used supervisor to start a python process.
 
-# multiple process with supervisor
+    # multiple process with supervisor
 
 You just need to add more [program] sections to the config file:
 
