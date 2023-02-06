@@ -17,7 +17,7 @@ Pelops reminded me that I have created my own assistant that can be something in
 
 Since the first time I touched a computer, if I see a repetitive task, I needed to automate it, no matter what. I still remember one of my first portable: Dev c++. 
 
-That necessity of automate explode when I knew the linux shell
+That necessity of automate explode when I met the linux shell
 
 <img src="https://www.thatcompany.com/wp-content/uploads/2019/12/power.jpg" width=500>
 
@@ -35,7 +35,7 @@ On a UI based systems, shortcuts are the option to open programs. On linux, you 
 
 ![](https://user-images.githubusercontent.com/3322836/215395540-db9c1d5d-0921-4e77-9860-81e52cad3859.png)
 
-So whe you enter the alias (CD in the example), the shell will execute the register commands
+So when you enter the alias (CD in the example), the shell will execute the register commands
 
 ## More human shell
 
