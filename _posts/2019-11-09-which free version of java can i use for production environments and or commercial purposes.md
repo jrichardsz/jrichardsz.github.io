@@ -3,7 +3,7 @@ layout: post
 title: Which free version of java can I use for production environments and or commercial purposes?
 description: "Augmented Reality with AR.js"
 category: development
-tags: [augmented reality ar]
+tags: [devops]
 comments: true  
 ---
 
