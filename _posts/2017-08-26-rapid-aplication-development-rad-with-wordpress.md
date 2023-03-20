@@ -2,8 +2,8 @@
 layout: post
 title: RAD Rapid application development for users, roles and pages with wordpress
 description: "RAD Rapid application development for users, roles and pages with wordpress"
-category: wordpress
-tags: [wordpress]
+category: rad
+tags: [wordpress, cms]
 comments: true  
 ---
 

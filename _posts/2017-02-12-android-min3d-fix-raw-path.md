@@ -2,7 +2,7 @@
 layout: post
 title: Fix Raw path of Min3D examples
 description: "Fix Raw path of Min3D examples"
-category: android
+category: 3D
 tags: [java, android, min3d, 3d]
 comments: true  
 ---

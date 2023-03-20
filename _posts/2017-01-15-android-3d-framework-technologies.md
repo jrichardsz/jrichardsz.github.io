@@ -2,8 +2,8 @@
 layout: post
 title: ¿Como crear un modelo 3D o mesh en android?
 description: "Un programa que aprenda de forma autónoma, es algo muy complejo."
-category: android
-tags: [android, 3D, mesh]
+category: 3d
+tags: [android, mesh]
 comments: true  
 ---
 

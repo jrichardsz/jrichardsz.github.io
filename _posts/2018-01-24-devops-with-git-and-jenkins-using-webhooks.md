@@ -3,7 +3,7 @@ layout: post
 title: Devops with Git and Jenkins using webhooks
 description: "I show you the steps required to implement a basic devops routine using git webhooks and jenkins"
 category: devops
-tags: [devops,jenkins,git, github, gitlab,bitbucket]
+tags: [jenkins,git, github, gitlab,bitbucket]
 comments: true  
 ---
 

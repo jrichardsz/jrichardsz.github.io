@@ -2,14 +2,14 @@
 layout: post
 title: The cheapest way to implement a devops flow in AWS
 description: ""
-category: integration
-tags: [documentation, uml]
+category: devops
+tags: [aws, webhook, git, docker]
 comments: true
 ---
 
 <img src="https://user-images.githubusercontent.com/3322836/226238044-0dca953a-6f9a-4e06-96b5-2c984ee6d6bc.png" width=500>
 
-After having implemented devops in a several cloud platforms like gcp, azure, aws, heroku, buddy.work, huawei, etc with several tools like jenkins, kubernetes, travis, bamboo, gitlab-ci, etc in my mind, there are many ways to implement a devops flows from the scratch to ready to use platforms, from manual to automated and from cheapest to more expensive.
+After having implemented devops in a several cloud platforms like gcp, azure, aws, heroku, buddy.works, huawei, etc with several tools like jenkins, kubernetes, travis, bamboo, gitlab-ci, etc, there are in my mind many ways to implement a devops flows from the scratch to ready to use platforms, from manual to automated and from cheapest to more expensive.
 
 In this post I will show you how to implement the cheapest devops flow for **startups, pocs, or very limited production environments.**
 
@@ -45,7 +45,7 @@ That feature is called Webhooks. Check this https://jrichardsz.github.io/devops/
 
 ## Aws Lambda with nodejs
 
-This is the serveless feature of aws. Basically is just a function on several languages which are triggered from several sources.
+This is the serverless feature of aws. Basically is just a function on several languages which are triggered from several sources.
 
 <img src="https://user-images.githubusercontent.com/3322836/226233841-992a9d4b-27a3-4988-90d5-e1fc33b21c4d.png" width=500>
 
@@ -75,7 +75,7 @@ To extract values from your real git providers webhook check:
 - bitbucket webhook https://gist.github.com/jrichardsz/52edc692ea6876f6409f93d1d2b1e175
 - github webhook https://gist.github.com/jrichardsz/d8017ec4195dd3cd51a5e4fc8ce9eb3e
 
-At this point we have a cheap replacement of an entire continuos integration server like Jenkins, Travis, Aws Code Build, etc
+At this point we have a cheap replacement of an entire continuous integration server like Jenkins, Travis, Aws Code Build, etc
 
 ## Create the server
 
@@ -169,6 +169,8 @@ docker run -it --name my_app -p 80:WXYZ -e bar=baz my_app
 
 ## Conclusion
 
-If you are using AWS and you need to save money in your startup, poc, etc you could use this approach. Very limited but cheap
+If you are using AWS and you need to save money in your startup, poc, etc you could use this approach. Very limited but cheap and only two aws services are required
+
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*fca_sikb4B8g4U55NHYbgA.png" width=500>
 
 I will update the script, and try to reduce the manual steps in the following post.

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Detecting executables in linux
-description: "In devops is required detect if some executables is ready to use or installed... "
-category: java
+description: "How to detect if tool is already installed on linux?"
+category: devops
 tags: [devops, bash, shell]
 comments: true  
 ---
@@ -30,19 +30,19 @@ Check this post to learn about **exit status** :
 Now is the turn of **sudo**. Almost all tools needs this permission. So I needed detect if sudo are allowed. This line do that:
 
 
-```
+```sh
 sudo -nv
 ```
 
 If this line is executed from a root user, does not return anything, but if a user with no privileges , return this :
 
-```
+```sh
 sudo: a password is required
 ```
 
 And thanks to Duke god, status is a nonzero value, so ...
 
-```
+```sh
 sudo_detect() {
   prompt=$(sudo -nv > /dev/null 2>&1)
   status=$?
@@ -64,7 +64,7 @@ to learn about **> /dev/null 2>&1** :
 
 # Other example : Detect Java
 
-```
+```sh
 java_detect() {
   java_version=$(java -version > /dev/null 2>&1)
   status=$?
