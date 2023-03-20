@@ -9,7 +9,7 @@ comments: true
 
 <img src="https://user-images.githubusercontent.com/3322836/224588811-2c51c66a-199c-41f7-9732-34c84801ac15.png" width=500>
 
-If after the endless meeting with he final users related to new system integration requirements, the business analyst, developers and testers only have paragraphs of information in a word as deliverable, this post is for you.
+If after the endless meeting with the final users related to new system integration requirements, the business analyst, developers and testers only have paragraphs of information in a word as deliverable, this post is for you.
 
 I will show you how to document and conduce the integration to the system events with the aim to have a readable and measurable list or backlog ready to be designed and implemented.
 
