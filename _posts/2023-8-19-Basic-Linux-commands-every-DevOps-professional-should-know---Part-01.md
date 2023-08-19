@@ -2,13 +2,13 @@
 layout: post
 title: Basic Linux commands every DevOps professional should know — Part 01
 description: ""
-category: foo
-tags: [foo, bar]
+category: devops
+tags: [bash, linux]
 comments: true
 ---
 
-
-![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*pFkbUwMZAcADJXzdLv3UtQ.png)([Source](https://www.amazon.com/Linux-Basics-Hackers-Networking-Scripting/dp/1593278551))
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*pFkbUwMZAcADJXzdLv3UtQ.png" width=500>
+Source: https://www.amazon.com/Linux-Basics-Hackers-Networking-Scripting/dp/1593278551
 
 Some Sunday I saw a question in stackoverflow with the magic words…
 
@@ -19,7 +19,7 @@ So I decided to help him and in the way, write this post
 The problem
 ===========
 
-\> Get some words from specific lines of stdout string
+> Get some words from specific lines of stdout string
 
 This is very common in a devops daily job. You have to execute shell/bash commands and parse its result to have some valuable data.
 
