@@ -65,7 +65,7 @@ And the incoming body could be read inside the lambda function like this:
 ```
 exports.handler = function(event, context, callback) {
   const body = JSON.parse(event.body)
-  console.log('data: ', body.data)
+  console.log('data: ', body)
 }
 ```
 
@@ -76,6 +76,11 @@ To extract values from your real git providers webhook check:
 - github webhook https://gist.github.com/jrichardsz/d8017ec4195dd3cd51a5e4fc8ce9eb3e
 
 At this point we have a cheap replacement of an entire continuous integration server like Jenkins, Travis, Aws Code Build, etc
+
+## Github Webhook
+
+If you were able to create the lambda and test it with an post http invocation (curl, postman, insomnia, etc), let's use that http url to register it as our github webhook
+
 
 ## Create the server
 
