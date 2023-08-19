@@ -8,7 +8,10 @@ comments: true
 ---
 
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*pFkbUwMZAcADJXzdLv3UtQ.png" width=500>
-Source: https://www.amazon.com/Linux-Basics-Hackers-Networking-Scripting/dp/1593278551
+
+Image Source: https://www.amazon.com/Linux-Basics-Hackers-Networking-Scripting/dp/1593278551
+
+--- 
 
 Some Sunday I saw a question in stackoverflow with the magic words…
 
