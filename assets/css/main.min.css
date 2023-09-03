@@ -2774,6 +2774,7 @@ body {
     max-width: 640px;
     margin-right: auto;
     margin-left: auto;
+    top:40px
 }
 
 @media only screen and (min-width:62.5em) {
@@ -2781,6 +2782,7 @@ body {
         max-width: 100%;
         margin-right: 0;
         margin-left: 0;
+        top:40px
     }
 }
 
