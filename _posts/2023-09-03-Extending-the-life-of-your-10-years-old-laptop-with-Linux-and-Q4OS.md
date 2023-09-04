@@ -6,12 +6,14 @@ category: linux
 tags: [linux]
 comments: true
 ---
-
-<img src="https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/db2080c8-5563-4739-82f9-1af110d4b4d3" width=500>
+<p align="center">
+  <img src="https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/f586626e-9e69-4e84-b8d4-a6a857d579c8" width=500>
+</p>
 --- 
 
 If you have a cheap or expensive(in the past) laptop with more than 5or 10 years old and you want it to keep living for any reason (love, saving or helping the environment) follow this post to install linux in your laptop and keep rolling more years.
 
+Image source: https://www.crunchyroll.com/es/series/GR751KNZY/attack-on-titan
 
 ## Reasons
 
@@ -40,35 +42,51 @@ How much CO2 does a laptop produce? The average estimated carbon footprint of a 
 
 The carbon footprint of a Dell laptop, including raw materials consumption, manufacturing, product use, and end-of-life recycling potential, is between 300 and 400 kgs of CO2e. This is equivalent to drinking 2,401l of orange juice or driving 1,200km in an SUV. Source: https://8billiontrees.com/carbon-offsets-credits/carbon-footprint-of-a-laptop/
 
+
+## Q4OS
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/f6da97d7-c090-480e-82b4-66318c03cd44)
+
+Q4OS - desktop operative system - https://q4os.org/
+
+I tried it in a laptop with 2gb RAM and after check the ram, more than 80% was free. So this OS is perfect for old laptops. 
+
+Can you imagine its speed in a new machine with a lot of ram or ssd?
+
 ## Let's start
 
-In this time, I choose an os that  I just met: 
+You only need:
 
-- Q4OS - desktop operating system - https://q4os.org/
+- Old or new laptop/desktop
+- Usb (pendrive) with at least 2gb
+- Q4OS iso file
+- **To have the battery full charged and/or connected to the power**
 
-I tried in a laptop with 2gb RAM and more than 75% was free after installing this system.
-
-**CHARGE THE BATTERY (full) before this procedure.**
-
-> **Note: There is some minimal probability of your laptop become useless due to some low level error, insufficient battery, etc.**
+> Note: There is a very small chance that your laptop will become unusable due to some low level error, insufficient battery, your own error during the installation, etc.
 
 ## #1 Download the iso
 
-Go to https://q4os.org/downloads1.html and select the LTS(long time support)
+Go to https://q4os.org/downloads1.html and select the Trinity version which is the **ultra lightweight**
 
-![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/dcd1ca73-60a3-42fa-85a1-56284563fd7d)
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/3e911cbd-5f66-4628-962b-069a8ce5756e)
 
 Then download it
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/c2299ba9-04d2-4e5c-ae29-0e073a53fa6c)
 
-If it works for you (some months of usage) and you can, you could donate a few dollars to the developers team.
+If it works for you (some months of usage), you could donate a few dollars to the developers team.
 
 This will download an .iso file from https://sourceforge.net/projects/q4os/
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/b0cfeae0-cfec-40a5-af90-4f4c95e5072c)
 
 .iso files is so common to install or try operative systems (windows and linux)
+
+> Note: You could choose Plasma version if want to try a more advanced desktop (sacrificing valuable RAM)
+
+> Note: I used Plasma version accidentally for this post. If it differs a lot of Trinity version, I will update the images. Let me know in the comments :D
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/dcd1ca73-60a3-42fa-85a1-56284563fd7d)
 
 ## #2 Burn the iso into your USB
 
@@ -116,7 +134,7 @@ Basically is to find a key to enter the boot menu and if your usb is connected a
 
 Choose it and let the magic begin
 
-> Note: Sometimes due to manufacturers ambition, the BIOS is protected or hard to boot. It is like the manufacturer don't want the usage of linux. If this is your case, I will happy to help you (after your research of course)
+> Note: Sometimes due to manufacturers ambition, the BIOS is protected or hard to boot. It is like the manufacturer don't want the usage of linux. If this is your case, I will happy to help you (after your research of course) to beat your BIOS.
 
 ## #4 Q4os Installation
 
@@ -179,10 +197,69 @@ Then, fill the classic form and next
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/ba2de215-70ea-404c-a483-65e2c55f3f3f)
 
-Check the summary and click on "install"
+Read the summary and click on "install"
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/18e2cbee-7b6d-4e9c-a807-8bea854ca1e3)
 
 Wait some minutes
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/b0e9ee49-1e2c-4b95-9d3d-0ddfc2449cc9)
+
+And then click in "Done"
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/de8e2a3b-35d0-4fdf-862d-c6fe7563efe5)
+
+Final log will appear and then this message:
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/e8c7c7e2-90e2-40ae-92ba-979b5d494803)
+
+After remove the usb and press "Enter", system will reboot and you will have a new laptop ready to rock
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/68f0ab7e-c172-4519-af04-69f4dcb73370)
+
+# #5 Final customizations
+
+At the first reboot, you will see this message
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/7dae5935-2e7b-455f-a54d-69001d78f089)
+
+By default you have useful apps like chromium web browser ready to be used. 
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/d4a0872d-c098-4be3-942a-cc25e7c32bf6)
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/696b7bcf-d779-4008-9ca0-0f69bbd4e18d)
+
+
+But if you want other apps like sheets, docs, etc, click in "Run desktop profiler"
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/376e7d97-ee8d-48c9-85e9-806aea0bc527)
+
+If you are a regular user (not programmer), choose "Full featured ..."
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/27a2d1df-553f-423e-9f5c-3e176b37d341)
+
+And wait until 100%. Click in "Finish"
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/07c1437e-d340-46fd-92cd-2a105e4a9ed7)
+
+After that, you will have the common tools like office 
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/87f9724d-be96-4a67-9173-de94a0749fb4)
+
+Multimedia to reproduce music or video files
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/258b3ea8-8997-4a58-84ea-251eecc79d53)
+
+
+> Note: Before this you need to configure your internet connection
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/6632f11c-c4a7-4a1c-9e86-529b70194845)
+
+> Note: If you want to have total control, choose this option in which almost nothing is installed
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/20459724-8f2c-438d-a590-daee2ddb3aab)
+
+> Note: Also you can skip the desktop profiler and choose install applications to choose app by app
+
+![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/eb190710-74f1-4b42-9a8b-82109b423ab4)
+
