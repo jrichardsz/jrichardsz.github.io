@@ -6,6 +6,7 @@ category: linux
 tags: [linux]
 comments: true
 ---
+<br>
 <p align="center">
   <img src="https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/f586626e-9e69-4e84-b8d4-a6a857d579c8" width=500>
 </p>
