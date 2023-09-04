@@ -66,7 +66,7 @@ You only need:
 
 ## #1 Download the iso
 
-Go to https://q4os.org/downloads1.html and select the Trinity version which is the **ultra lightweight**
+Go to https://q4os.org/downloads1.html and select the **Trinity** version which is the **ultra lightweight**
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/3e911cbd-5f66-4628-962b-069a8ce5756e)
 
@@ -263,3 +263,6 @@ Multimedia to reproduce music or video files
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/eb190710-74f1-4b42-9a8b-82109b423ab4)
 
+# Conclusion
+
+I'm sure you'll see for yourself how Linux can extend the life of your lovely old laptop. Also Linux is a path to enlightenment, so give it a chance!
