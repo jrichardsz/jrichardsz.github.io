@@ -10,7 +10,7 @@ comments: true
 <img src="https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/db2080c8-5563-4739-82f9-1af110d4b4d3" width=500>
 --- 
 
-If you have a cheap or expensive(at the time) laptop with more than 5 years old and you want it to keep living for any reason (like love, saving or helping the environment) follow this post to install linux in your laptop and keep rolling more years.
+If you have a cheap or expensive(in the past) laptop with more than 5or 10 years old and you want it to keep living for any reason (love, saving or helping the environment) follow this post to install linux in your laptop and keep rolling more years.
 
 
 ## Reasons
@@ -84,7 +84,9 @@ Before the usb connection, you will see nothing in the device selection:
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/852657d4-3d6a-470c-9a11-15685a8e8512)
 
-After the usb connection, you should see your USB. **BE CAREFULL WITH THIS SELECTION, BECAUSE IF YOU CHOOSE ANOTHER DEVICE, THE CONTENT WILL BE DELETED**
+After the usb connection, you should see your USB. 
+
+> Be careful with this selection, because if you choose another device, the content will be deleted
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/7fade66c-6ec0-45b9-8702-9311c8c9d791)
 
@@ -158,16 +160,16 @@ If you are new in Linux, choose "Q4OS Desktop"
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/f6aec0e5-feeb-4da4-aad6-fb151a58aa5d)
 
-**THIS PART IS SENSIBLE**
+Then, you need to choose the drive
 
 - If you are bored of windows (update, lags, freezing, virus, etc) choose the first option "Erase DIsk"
 - If you want to have windows & linux (dual boot), choose the other option but you should have some experience with partitions
 
-In this post ww will choose "Erase Disk" because windows sucks!!
+> In this post ww will choose "Erase Disk" because windows sucks!!
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/ea09af2c-3a10-450c-8fea-86de80a577ec)
 
-> Note: If you have an SSD drive, you could choose it to discover new velocity levels in your new OS
+If you have an SSD drive, you could choose it increase the speed of your Linux even more!!
 
 If you are paranoid, you could choose the encrypt option. So if your machine is stolen , nobody sane will be able to see your content
 
