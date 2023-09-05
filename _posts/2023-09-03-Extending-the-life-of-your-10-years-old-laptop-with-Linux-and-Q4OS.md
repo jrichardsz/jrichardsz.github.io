@@ -181,7 +181,7 @@ If you are new in Linux, choose "Q4OS Desktop"
 
 Then, you need to choose the drive
 
-- If you are bored of windows (update, lags, freezing, virus, etc) choose the first option "Erase DIsk"
+- If you are bored of windows (update, lags, freezing, virus, etc) choose the first option "Erase Disk"
 - If you want to have windows & linux (dual boot), choose the other option but you should have some experience with partitions
 
 > In this post we will choose "Erase Disk" because windows sucks!!
