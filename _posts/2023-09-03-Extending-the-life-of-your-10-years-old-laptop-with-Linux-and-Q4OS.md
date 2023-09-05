@@ -12,7 +12,7 @@ comments: true
 </p>
 --- 
 
-If you have a cheap or expensive(in the past) laptop with more than 5or 10 years old and you want it to keep living for any reason (love, saving or helping the environment) follow this post to install linux in your laptop and keep rolling more years.
+If you have a cheap or expensive(in the past) laptop with more than 5 or 10 years old and you want it to keep living for any reason (love, saving or helping the environment) follow this post to install linux in your laptop and keep rolling more years.
 
 Image source: https://www.crunchyroll.com/es/series/GR751KNZY/attack-on-titan
 
@@ -184,7 +184,7 @@ Then, you need to choose the drive
 - If you are bored of windows (update, lags, freezing, virus, etc) choose the first option "Erase DIsk"
 - If you want to have windows & linux (dual boot), choose the other option but you should have some experience with partitions
 
-> In this post ww will choose "Erase Disk" because windows sucks!!
+> In this post we will choose "Erase Disk" because windows sucks!!
 
 ![image](https://github.com/jrichardsz/jrichardsz.github.io/assets/3322836/ea09af2c-3a10-450c-8fea-86de80a577ec)
 
